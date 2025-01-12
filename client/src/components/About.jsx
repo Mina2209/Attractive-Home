@@ -1,6 +1,6 @@
 import React from "react";
 
-const About2 = () => {
+const About = () => {
   return (
     <section className="text-white">
       <video
@@ -56,4 +56,4 @@ const About2 = () => {
   );
 };
 
-export default About2;
+export default About;
