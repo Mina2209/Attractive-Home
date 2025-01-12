@@ -7,12 +7,15 @@ const Services = () => {
     <section className="bg-[#1f1f1f]">
       <video
         className="absolute inset-0 w-full h-full object-cover"
-        src="services.mp4"
+        src="Services.mp4"
         autoPlay
         loop
         muted
         playsInline
       />
+      {/* Dark overlay for better text visibility */}
+      <div className="absolute inset-0 bg-black opacity-50"></div>
+      
       <div className="max-w-7xl mx-auto sm:px-8 lg:px-10">
         <div className="flex flex-col min-h-screen">
           <div className="relative z-1 mb-16 grid grid-cols-1 mt-auto">

@@ -7,7 +7,7 @@ const servicesData = [
     {
       title: "Remodeling",
       description: "Transform your spaces with our high-quality remodeling services.",
-      video: "/portfolio.mp4",
+      video: "Portfolio.mp4",
     },
     {
       title: "Kitchen Remodeling",

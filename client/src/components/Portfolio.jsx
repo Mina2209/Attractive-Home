@@ -79,7 +79,7 @@ const Portfolio = () => {
     <section className="py-20 md:px-12 lg:px-24 bg-[#1f1f1f] text-white">
       <video
         className="absolute inset-0 w-full h-full object-cover"
-        src="portfolio.mp4"
+        src="Portfolio.mp4"
         autoPlay
         loop
         muted

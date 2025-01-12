@@ -16,7 +16,7 @@ function App() {
   useEffect(() => {
     const loadTimeout = setTimeout(() => {
       setLoading(false);
-    }, 200);
+    }, 1000);
 
     return () => clearTimeout(loadTimeout);
   }, []);
@@ -30,11 +30,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/About" element={<About />} />
-        <Route path="/Portfolio" element={<Portfolio />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/portfolio/:categoryId/:projectId" element={<ProjectDetails />} />
-        <Route path="/Contacts" element={<Contacts />} />
-        <Route path="/Services" element={<Services />} />
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/services" element={<Services />} />
       </Routes>
       <WhatsAppButton />
       <Footer />

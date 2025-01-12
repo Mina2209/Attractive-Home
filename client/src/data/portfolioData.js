@@ -12,12 +12,6 @@ const portfolioData = {
         area: "750 m²",
         description: "Architectural design",
         video: "projects/ahmedArch.mp4",
-        details: [
-          { type: "image", src: "/toBeUsed.jpg" },
-          { type: "image", src: "/toBeUsed.jpg" },
-          { type: "video", src: "/video.mp4" },
-          { type: "image", src: "/room2.png" },
-        ],
       },
     ],
   },

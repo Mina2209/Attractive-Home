@@ -11,37 +11,37 @@ const Navbar = () => {
 
   return (
     <nav
-      className="fixed top-0 w-full flex justify-between items-center px-10 py-5 z-10 text-white
+      className="fixed top-0 w-full flex justify-between items-center px-4 sm:px-6 lg:px-10 py-5 z-10 text-white
       transition-all duration-300 bg-transparent"
       style={{ backdropFilter: "blur(6px)" }}
     >
       <Link to="/" className="flex items-center">
-        <img src="logov2.png" alt="Logo" className="h-24 w-auto" />
+        <img src="Logo.webp" alt="Logo" className="h-24 w-auto" />
       </Link>
 
       {/* Desktop Link */}
       <div className="hidden md:flex space-x-14 text-white">
         <Link
-          to="/About"
-          className={`hover:text-gray-300 ${isActive("/About")}`}
+          to="/about"
+          className={`hover:text-gray-300 ${isActive("/about")}`}
         >
           ABOUT
         </Link>
         <Link
-          to="/Portfolio"
-          className={`hover:text-gray-300 ${isActive("/Portfolio")}`}
+          to="/portfolio"
+          className={`hover:text-gray-300 ${isActive("/portfolio")}`}
         >
           PORTFOLIO
         </Link>
         <Link
-          to="/Contacts"
-          className={`hover:text-gray-300 ${isActive("/Contacts")}`}
+          to="/contacts"
+          className={`hover:text-gray-300 ${isActive("/contacts")}`}
         >
           CONTACTS
         </Link>
         <Link
-          to="/Services"
-          className={`hover:text-gray-300 ${isActive("/Services")}`}
+          to="/services"
+          className={`hover:text-gray-300 ${isActive("/services")}`}
         >
           SERVICES
         </Link>
@@ -72,29 +72,29 @@ const Navbar = () => {
       {menuOpen && (
         <div className="absolute top-full left-0 w-full bg-gray-900 bg-opacity-90 flex flex-col items-center space-y-5 py-5 md:hidden">
           <Link
-            to="/About"
-            className={`hover:text-gray-300 ${isActive("/About")}`}
+            to="/about"
+            className={`hover:text-gray-300 ${isActive("/about")}`}
             onClick={() => setMenuOpen(false)}
           >
             ABOUT
           </Link>
           <Link
-            to="/Portfolio"
-            className={`hover:text-gray-300 ${isActive("/Portfolio")}`}
+            to="/portfolio"
+            className={`hover:text-gray-300 ${isActive("/portfolio")}`}
             onClick={() => setMenuOpen(false)}
           >
             PORTFOLIO
           </Link>
           <Link
-            to="/Contacts"
-            className={`hover:text-gray-300 ${isActive("/Contacts")}`}
+            to="/contacts"
+            className={`hover:text-gray-300 ${isActive("/contacts")}`}
             onClick={() => setMenuOpen(false)}
           >
             CONTACTS
           </Link>
           <Link
-            to="/Services"
-            className={`hover:text-gray-300 ${isActive("/Services")}`}
+            to="/services"
+            className={`hover:text-gray-300 ${isActive("/services")}`}
             onClick={() => setMenuOpen(false)}
           >
             SERVICES

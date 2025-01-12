@@ -16,7 +16,7 @@ const Footer = () => {
     return location.pathname === path ? "text-gray-300" : "text-white";
   };
 
-  const isContactPage = location.pathname === "/Contacts";
+  const isContactPage = location.pathname === "/contacts";
   return (
     <footer
       className={`relative text-white py-32 overflow-hidden ${
@@ -31,34 +31,34 @@ const Footer = () => {
           muted
           playsInline
         >
-          <source src="sandVideo.mp4" type="video/mp4" />
+          <source src="Sand-Video.mp4" type="video/mp4" />
         </video>
       )}
-      <div className="container mx-auto px-12 relative">
+      <div className="container mx-auto px-12 2lg:px-2 relative">
         <div className="grid grid-cols-1 space-y-6 gap-8 sm:grid-cols-3 sm:space-y-0">
           {/* Left Section */}
           <div>
             <ul className="font-semibold space-y-12 uppercase">
               <li>
                 <Link
-                  to="/About"
-                  className={`hover:text-gray-300 ${isActive("/About")}`}
+                  to="/about"
+                  className={`hover:text-gray-300 ${isActive("/about")}`}
                 >
                   About Us
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/Contacts"
-                  className={`hover:text-gray-300 ${isActive("/Contacts")}`}
+                  to="/contacts"
+                  className={`hover:text-gray-300 ${isActive("/contacts")}`}
                 >
                   Contacts
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/Services"
-                  className={`hover:text-gray-300 ${isActive("/Services")}`}
+                  to="/services"
+                  className={`hover:text-gray-300 ${isActive("/services")}`}
                 >
                   Services
                 </Link>
@@ -71,15 +71,15 @@ const Footer = () => {
             <ul className="font-semibold space-y-12 uppercase">
             <li>
                 <Link
-                  to="/Portfolio"
-                  className={`hover:text-gray-300 ${isActive('/Portfolio')}`}
+                  to="/portfolio"
+                  className={`hover:text-gray-300 ${isActive('/portfolio')}`}
                 >
                   Portfolio
                 </Link>
               </li>
               <li>
                 <Link
-                  to="/Portfolio"
+                  to="/portfolio"
                   className="hover:text-gray-300"
                 >
                   Architectural Design
@@ -87,7 +87,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/Portfolio"
+                  to="/portfolio"
                   className="hover:text-gray-300"
                 >
                   Interior Design
@@ -95,7 +95,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  to="/Portfolio"
+                  to="/portfolio"
                   className="hover:text-gray-300"
                 >
                   Fit-Out Interiors

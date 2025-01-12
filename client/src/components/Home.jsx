@@ -1,14 +1,22 @@
 import React from "react";
+import HlsPlayer from "react-hls-player";
 
 const Home = () => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      <video
+      {/* <video
         className="absolute inset-0 w-full h-full object-cover"
-        src="video.mp4"
+        src="Portfolio.mp4"
         autoPlay
         loop
         muted
+        playsInline
+      /> */}
+      <HlsPlayer
+        className="absolute inset-0 w-full h-full object-cover"
+        src="Portfolio-Video/output.m3u8"
+        autoPlay
+        loop
         playsInline
       />
 
@@ -20,7 +28,7 @@ const Home = () => {
           className="text-5xl font-bold mb-4"
           style={{ letterSpacing: "0.72px" }}
         >
-          Attractive Home
+          Attractive Home Test
         </h1>
         {/* <p className="text-lg">DESIGN | ART | ARCHITECTURE</p> */}
         <p
