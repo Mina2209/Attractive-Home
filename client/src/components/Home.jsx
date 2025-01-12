@@ -1,5 +1,4 @@
 import React from "react";
-import HlsPlayer from "react-hls-player";
 
 const Home = () => {
   return (
