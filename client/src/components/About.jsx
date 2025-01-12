@@ -8,7 +8,6 @@ const About = () => {
         src="projects/ahmedInterior.mp4"
         autoPlay
         loop
-        muted
         playsInline
       />
       {/* Dark overlay for better text visibility */}

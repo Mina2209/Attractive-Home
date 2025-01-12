@@ -4,19 +4,12 @@ import HlsPlayer from "react-hls-player";
 const Home = () => {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* <video
+      <video
         className="absolute inset-0 w-full h-full object-cover"
         src="Portfolio.mp4"
         autoPlay
         loop
         muted
-        playsInline
-      /> */}
-      <HlsPlayer
-        className="absolute inset-0 w-full h-full object-cover"
-        src="Portfolio-Video/output.m3u8"
-        autoPlay
-        loop
         playsInline
       />
 
