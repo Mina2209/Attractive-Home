@@ -5,6 +5,7 @@ export default defineConfig({
   plugins: [react()],
   // Proxying Requests in Development
   server: {
+    host: false,
     proxy: {
       '/api': 'http://localhost:5000', 
     },
