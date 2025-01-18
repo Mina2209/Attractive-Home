@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="text-white">
+    <section className="text-white relative">
       <video
         className="absolute inset-0 w-full h-full object-cover"
         src="projects/ahmedInterior.mp4"

@@ -18,7 +18,7 @@ const Services = () => {
       
       <div className="max-w-7xl mx-auto sm:px-8 lg:px-10">
         <div className="flex flex-col min-h-screen">
-          <div className="relative z-1 mb-16 grid grid-cols-1 mt-auto">
+          <div className="relative z-1 mb-32 sm:mb-16 grid grid-cols-1 mt-auto">
             <h2
               className="text-[2.8rem] sm:text-5xl font-bold text-white px-8 sm:px-6 lg:px-14 uppercase"
               style={{ lineHeight: "1.2", letterSpacing: "3px" }}
