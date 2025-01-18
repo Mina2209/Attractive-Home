@@ -1,11 +1,29 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import Hls from "hls.js";
 
 const Home = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    const videoUrl =
+      "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Portfolio-videos/Portfolio.m3u8";
+
+    if (Hls.isSupported()) {
+      const hls = new Hls();
+      hls.loadSource(videoUrl);
+      hls.attachMedia(video);
+    } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+      // Fallback for Safari
+      video.src = videoUrl;
+    }
+  }, []);
+
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <video
         className="absolute inset-0 w-full h-full object-cover"
-        src="Portfolio.mp4"
+        ref={videoRef}
         autoPlay
         loop
         muted
@@ -20,7 +38,7 @@ const Home = () => {
           className="text-5xl font-bold mb-4"
           style={{ letterSpacing: "0.72px" }}
         >
-          Attractive Home Test
+          Attractive Home
         </h1>
         {/* <p className="text-lg">DESIGN | ART | ARCHITECTURE</p> */}
         <p
