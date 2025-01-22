@@ -34,8 +34,8 @@ const Footer = () => {
           <source src="Sand-Video.mp4" type="video/mp4" />
         </video>
       )}
-      <div className="container mx-auto px-12 2lg:px-2 relative">
-        <div className="grid grid-cols-1 space-y-6 gap-8 sm:grid-cols-3 sm:space-y-0">
+      <div className="container mx-auto px-12 sm:px-0 relative">
+        <div className="grid grid-cols-1 space-y-6 gap-8 2xl:gap-64 sm:grid-cols-3 sm:space-y-0">
           {/* Left Section */}
           <div>
             <ul className="font-semibold space-y-12 uppercase">
@@ -108,7 +108,9 @@ const Footer = () => {
           <div className="text-left">
             <h1 className="font-bold text-3xl mb-10">Attractive Home</h1>
             <p className="text-sm mb-10">
-              © 2009 — 2024 Attractive Home. All Rights Reserved. Developed by{" "}
+              © 2009 — 2024 Attractive Home. All Rights Reserved.
+              <br />
+              Developed by{" "}
               <a
                 href="https://www.linkedin.com/in/mina-nassef-32203a246/"
                 target="_blank"
