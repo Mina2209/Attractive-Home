@@ -1,6 +1,7 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import portfolioData from "../data/portfolioData";
 import { Link } from "react-router-dom";
+import Hls from "hls.js";
 
 const PortfolioCategory = ({
   category,
@@ -55,7 +56,7 @@ const ProjectCard = ({
   </div>
 );
 
-const Portfolio = () => {
+const Portfolio = ({ setLoading }) => {
   const [activeTab, setActiveTab] = useState(null);
   const videoRefs = useRef({});
   const activeCategory = portfolioData[activeTab];
@@ -75,11 +76,38 @@ const Portfolio = () => {
     }
   };
 
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    const videoUrl =
+      "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Portfolio-videos/Portfolio.m3u8";
+
+    const handleVideoReady = () => {
+      setLoading(false);
+    };
+
+    if (Hls.isSupported()) {
+      const hls = new Hls();
+      hls.loadSource(videoUrl);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        video.addEventListener("canplaythrough", handleVideoReady);
+      });
+    } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+      video.src = videoUrl;
+      video.addEventListener("canplaythrough", handleVideoReady);
+    }
+    return () => {
+      video.removeEventListener("canplaythrough", handleVideoReady);
+    };
+  }, []);
+
   return (
     <section className="py-20 md:px-12 lg:px-24 bg-[#1f1f1f] text-white">
       <video
         className="absolute inset-0 w-full h-full object-cover"
-        src="Portfolio.mp4"
+        ref={videoRef}
         autoPlay
         loop
         muted

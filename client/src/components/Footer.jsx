@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -9,6 +9,7 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link, useLocation } from "react-router-dom";
+import Hls from "hls.js";
 
 const Footer = () => {
   const location = useLocation();
@@ -17,6 +18,24 @@ const Footer = () => {
   };
 
   const isContactPage = location.pathname === "/contacts";
+
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    const videoUrl =
+      "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Contacts-Videos/Contacts.m3u8";
+    // const videoUrl = "Portfolio-Video/output.m3u8";
+
+    if (Hls.isSupported()) {
+      const hls = new Hls();
+      hls.loadSource(videoUrl);
+      hls.attachMedia(video);
+    } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+      video.src = videoUrl;
+    }
+  }, []);
+
   return (
     <footer
       className={`relative text-white py-32 overflow-hidden ${
@@ -26,16 +45,15 @@ const Footer = () => {
       {isContactPage && (
         <video
           className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
+          ref={videoRef}
           autoPlay
           loop
           muted
           playsInline
-        >
-          <source src="Sand-Video.mp4" type="video/mp4" />
-        </video>
+        />
       )}
-      <div className="container mx-auto px-12 sm:px-0 relative">
-        <div className="grid grid-cols-1 space-y-6 gap-8 2xl:gap-64 sm:grid-cols-3 sm:space-y-0">
+      <div className="container mx-auto px-12 relative">
+        <div className="grid grid-cols-1 space-y-6 gap-8 2xl:gap-32 sm:grid-cols-3 sm:space-y-0">
           {/* Left Section */}
           <div>
             <ul className="font-semibold space-y-12 uppercase">
@@ -69,35 +87,26 @@ const Footer = () => {
           {/* Middle Section */}
           <div>
             <ul className="font-semibold space-y-12 uppercase">
-            <li>
+              <li>
                 <Link
                   to="/portfolio"
-                  className={`hover:text-gray-300 ${isActive('/portfolio')}`}
+                  className={`hover:text-gray-300 ${isActive("/portfolio")}`}
                 >
                   Portfolio
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/portfolio"
-                  className="hover:text-gray-300"
-                >
+                <Link to="/portfolio" className="hover:text-gray-300">
                   Architectural Design
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/portfolio"
-                  className="hover:text-gray-300"
-                >
+                <Link to="/portfolio" className="hover:text-gray-300">
                   Interior Design
                 </Link>
               </li>
               <li>
-                <Link
-                  to="/portfolio"
-                  className="hover:text-gray-300"
-                >
+                <Link to="/portfolio" className="hover:text-gray-300">
                   Fit-Out Interiors
                 </Link>
               </li>

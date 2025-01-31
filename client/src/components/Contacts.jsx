@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 
-const Contacts = () => {
+const Contacts = ({ setLoading }) => {
   const [countryCode, setCountryCode] = useState("+971");
 
   useEffect(() => {
+    setLoading(false);
+    
     async function fetchCountryCode() {
       try {
         const response = await fetch("https://ipapi.co/json/");
