@@ -1,4 +1,3 @@
-import { useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -9,9 +8,9 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link, useLocation } from "react-router-dom";
-import Hls from "hls.js";
+import VideoPlayer from "./VideoPlayer";
 
-const Footer = () => {
+const Footer = ({ setLoading }) => {
   const location = useLocation();
   const isActive = (path) => {
     return location.pathname === path ? "text-gray-300" : "text-white";
@@ -19,22 +18,9 @@ const Footer = () => {
 
   const isContactPage = location.pathname === "/contacts";
 
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    const video = videoRef.current;
-    const videoUrl =
-      "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Contacts-Videos/Contacts.m3u8";
-    // const videoUrl = "Portfolio-Video/output.m3u8";
-
-    if (Hls.isSupported()) {
-      const hls = new Hls();
-      hls.loadSource(videoUrl);
-      hls.attachMedia(video);
-    } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-      video.src = videoUrl;
-    }
-  }, []);
+  const videoUrl =
+    "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Contacts-Videos/Contacts.m3u8";
+  // const videoUrl = "Portfolio-Video/output.m3u8";
 
   return (
     <footer
@@ -43,14 +29,12 @@ const Footer = () => {
       }`}
     >
       {isContactPage && (
-        <video
+        <VideoPlayer
+          videoUrl= {videoUrl}
           className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
-          ref={videoRef}
-          autoPlay
-          loop
-          muted
-          playsInline
-        />
+          setLoading={setLoading}
+        >
+        </VideoPlayer>
       )}
       <div className="container mx-auto px-12 relative">
         <div className="grid grid-cols-1 space-y-6 gap-8 2xl:gap-32 sm:grid-cols-3 sm:space-y-0">
