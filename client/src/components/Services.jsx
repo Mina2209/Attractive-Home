@@ -1,48 +1,21 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import servicesData from "../data/servicesData";
-import Hls from "hls.js";
+import VideoPlayer from "./VideoPlayer";
 
 const Services = ({ setLoading }) => {
   const [isPlaying, setIsPlaying] = useState(false);
-  const videoRef = useRef(null);
 
-  useEffect(() => {
-    const video = videoRef.current;
-    const videoUrl =
-      "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Service-Videos/Services.m3u8";
-    // const videoUrl = "Portfolio-Video/output.m3u8";
-
-    const handleVideoReady = () => {
-      setLoading(false);
-    };
-
-    if (Hls.isSupported()) {
-      const hls = new Hls();
-      hls.loadSource(videoUrl);
-      hls.attachMedia(video);
-      hls.on(Hls.Events.MANIFEST_PARSED, () => {
-        video.addEventListener("canplaythrough", handleVideoReady);
-      });
-    } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-      video.src = videoUrl;
-      video.addEventListener("canplaythrough", handleVideoReady);
-    }
-
-    return () => {
-      video.removeEventListener("canplaythrough", handleVideoReady);
-    };
-  }, []);
+  const videoUrl =
+    "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Service-Videos/Services.m3u8";
 
   return (
     <section className="bg-[#1f1f1f]">
-      <video
+      <VideoPlayer
+        videoUrl={videoUrl}
         className="absolute inset-0 w-full h-full object-cover"
-        ref={videoRef}
-        autoPlay
-        loop
-        muted
-        playsInline
+        setLoading={setLoading}
       />
+  
       {/* Dark overlay for better text visibility */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
 

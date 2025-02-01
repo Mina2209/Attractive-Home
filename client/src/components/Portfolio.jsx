@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import portfolioData from "../data/portfolioData";
 import { Link } from "react-router-dom";
-import Hls from "hls.js";
+import VideoPlayer from "./VideoPlayer";
 
 const PortfolioCategory = ({
   category,
@@ -76,44 +76,18 @@ const Portfolio = ({ setLoading }) => {
     }
   };
 
-  const videoRef = useRef(null);
+  const videoUrl =
+    "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Portfolio-videos/Portfolio.m3u8";
 
-  useEffect(() => {
-    const video = videoRef.current;
-    const videoUrl =
-      "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Portfolio-videos/Portfolio.m3u8";
-
-    const handleVideoReady = () => {
-      setLoading(false);
-    };
-
-    if (Hls.isSupported()) {
-      const hls = new Hls();
-      hls.loadSource(videoUrl);
-      hls.attachMedia(video);
-      hls.on(Hls.Events.MANIFEST_PARSED, () => {
-        video.addEventListener("canplaythrough", handleVideoReady);
-      });
-    } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-      video.src = videoUrl;
-      video.addEventListener("canplaythrough", handleVideoReady);
-    }
-    return () => {
-      video.removeEventListener("canplaythrough", handleVideoReady);
-    };
-  }, []);
 
   return (
     <section className="py-20 md:px-12 lg:px-24 bg-[#1f1f1f] text-white">
-      <video
+      <VideoPlayer 
+        videoUrl={videoUrl}
         className="absolute inset-0 w-full h-full object-cover"
-        ref={videoRef}
-        autoPlay
-        loop
-        muted
-        playsInline
+        setLoading={setLoading}
       />
-
+      
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="flex flex-col min-h-screen">
         <div className="relative z-1 max-w-5xl mb-12 grid grid-cols-1 mt-auto">

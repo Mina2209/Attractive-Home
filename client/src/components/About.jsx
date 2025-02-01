@@ -4,14 +4,12 @@ const About = ({ setLoading }) => {
   const videoUrl =
     "https://s3.me-central-1.amazonaws.com/attractivehome.ae/About-Videos/About.m3u8";
 
-  
-
   return (
     <section className="text-white relative">
-      <VideoPlayer 
-        videoUrl={videoUrl} 
-        className = "absolute inset-0 w-full h-full object-cover" 
-        setLoading={setLoading} 
+      <VideoPlayer
+        videoUrl={videoUrl}
+        className="absolute inset-0 w-full h-full object-cover"
+        setLoading={setLoading}
       />
       {/* Dark overlay for better text visibility */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
