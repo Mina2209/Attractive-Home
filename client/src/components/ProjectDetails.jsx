@@ -1,10 +1,15 @@
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import portfolioData from "../data/portfolioData";
 
-const ProjectDetails = () => {
+const ProjectDetails = ({ setLoading }) => {
   const { categoryId, projectId } = useParams();
   const category = portfolioData[categoryId];
   const project = category.projects.find((proj) => proj.id === projectId);
+
+  useEffect(() => {
+    setLoading(false);
+  }, []);
 
   if (!project)
     return (
@@ -17,11 +22,11 @@ const ProjectDetails = () => {
     );
 
   return (
-    <section className="flex flex-col bg-[#1f1f1f] text-white">
-      {/* <div className="h-40"></div>
-      <h1 className="text-4xl font-bold mb-8 text-center px-4">
+    <section className="flex flex-col bg-black text-white">
+      <div className="h-40 bg-[#1f1f1f]"></div>
+      <h1 className="text-4xl font-bold mb-10 mt-10 text-center px-4">
         {project.title}
-      </h1> */}
+      </h1>
       <div className="w-full h-auto overflow-hidden space-y-4">
         {project.details.map((item, index) =>
           item.type === "image" ? (
@@ -38,7 +43,6 @@ const ProjectDetails = () => {
               className="w-full h-auto object-cover"
               autoPlay
               loop
-              muted
               playsInline
             />
           )

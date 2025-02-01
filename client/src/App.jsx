@@ -29,7 +29,7 @@ const RouteHandler = ({ setLoading }) => {
       <Route path="/portfolio" element={<Portfolio setLoading={setLoading}/>} />
       <Route
         path="/portfolio/:categoryId/:projectId"
-        element={<ProjectDetails />}
+        element={<ProjectDetails setLoading={setLoading} />}
       />
       <Route path="/contacts" element={<Contacts setLoading={setLoading}/>} />
       <Route path="/services" element={<Services setLoading={setLoading} />} />
