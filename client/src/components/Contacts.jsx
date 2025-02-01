@@ -1,12 +1,17 @@
 import { useEffect, useState } from "react";
 
-const Contacts = ({ setLoading }) => {
+const Contacts = () => {
   const [countryCode, setCountryCode] = useState("+971");
 
   useEffect(() => {
-    setLoading(false);
-    
     async function fetchCountryCode() {
+      // Check localStorage first
+      const cachedCode = localStorage.getItem("countryCode");
+      if (cachedCode) {
+        setCountryCode(cachedCode);
+        return;
+      }
+
       try {
         const response = await fetch("https://ipapi.co/json/");
         if (!response.ok) {
@@ -14,6 +19,9 @@ const Contacts = ({ setLoading }) => {
         }
         const data = await response.json();
         const code = data.country_calling_code || "+971";
+
+        // Store in localStorage to avoid future API calls
+        localStorage.setItem("countryCode", code);
         setCountryCode(code);
       } catch (error) {
         console.error("Error fetching country code:", error);
