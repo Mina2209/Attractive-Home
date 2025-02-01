@@ -18,9 +18,14 @@ import ProjectDetails from "./components/ProjectDetails";
 
 const RouteHandler = ({ setLoading }) => {
   const location = useLocation();
+  const [prevPath, setPrevPath] = useState(location.pathname);
+
   useEffect(() => {
-    setLoading(true);
-  }, [location]);
+    if (location.pathname !== prevPath) {
+      setLoading(true); // Only set loading if the route is actually changing
+      setPrevPath(location.pathname);
+    }
+  }, [location, prevPath, setLoading]);
 
   return (
     <Routes>
