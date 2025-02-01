@@ -1,43 +1,17 @@
-import { useEffect, useRef } from "react";
-import Hls from "hls.js";
+import VideoPlayer from "./VideoPlayer";
 
 const About = ({ setLoading }) => {
-  const videoRef = useRef(null);
+  const videoUrl =
+    "https://s3.me-central-1.amazonaws.com/attractivehome.ae/About-Videos/About.m3u8";
 
-  useEffect(() => {
-    const video = videoRef.current;
-    const videoUrl =
-      "https://s3.me-central-1.amazonaws.com/attractivehome.ae/About-Videos/About.m3u8";
-    // const videoUrl = "Portfolio-Video/output.m3u8";
+  
 
-    const handleVideoReady = () => {
-      setLoading(false);
-    };
-
-    if (Hls.isSupported()) {
-      const hls = new Hls();
-      hls.loadSource(videoUrl);
-      hls.attachMedia(video);
-      hls.on(Hls.Events.MANIFEST_PARSED, () => {
-        video.addEventListener("canplaythrough", handleVideoReady);
-      });
-    } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
-      video.src = videoUrl;
-      video.addEventListener("canplaythrough", handleVideoReady);
-    }
-
-    return () => {
-      video.removeEventListener("canplaythrough", handleVideoReady);
-    };
-  }, []);
   return (
     <section className="text-white relative">
-      <video
-        className="absolute inset-0 w-full h-full object-cover"
-        ref={videoRef}
-        autoPlay
-        loop
-        playsInline
+      <VideoPlayer 
+        videoUrl={videoUrl} 
+        className = "absolute inset-0 w-full h-full object-cover" 
+        setLoading={setLoading} 
       />
       {/* Dark overlay for better text visibility */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
