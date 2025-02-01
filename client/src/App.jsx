@@ -31,7 +31,7 @@ const RouteHandler = ({ setLoading }) => {
         path="/portfolio/:categoryId/:projectId"
         element={<ProjectDetails setLoading={setLoading} />}
       />
-      <Route path="/contacts" element={<Contacts setLoading={setLoading}/>} />
+      <Route path="/contacts" element={<Contacts/>} />
       <Route path="/services" element={<Services setLoading={setLoading} />} />
     </Routes>
   );
@@ -47,7 +47,7 @@ function App() {
         <Navbar />
         <RouteHandler setLoading={setLoading} />
         <WhatsAppButton />
-        <Footer />
+        <Footer setLoading={setLoading} />
       </div>
     </Router>
   );
