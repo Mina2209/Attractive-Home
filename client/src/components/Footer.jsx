@@ -33,6 +33,7 @@ const Footer = ({ setLoading }) => {
           videoUrl= {videoUrl}
           className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
           setLoading={setLoading}
+          showMuteButton={false}
         >
         </VideoPlayer>
       )}
