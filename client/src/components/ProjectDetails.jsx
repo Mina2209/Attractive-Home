@@ -1,6 +1,7 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import portfolioData from "../data/portfolioData";
+import VideoPlayer from "./VideoPlayer";
 
 const ProjectDetails = ({ setLoading }) => {
   const { categoryId, projectId } = useParams();
@@ -9,7 +10,7 @@ const ProjectDetails = ({ setLoading }) => {
 
   useEffect(() => {
     setLoading(false);
-  }, []);
+  }, [setLoading]);
 
   if (!project)
     return (
@@ -37,13 +38,20 @@ const ProjectDetails = ({ setLoading }) => {
               className="w-full h-auto"
             />
           ) : (
-            <video
+            // <video
+            //   key={`detail-${index}`}
+            //   src={item.src}
+            //   className="w-full h-auto object-cover"
+            //   autoPlay
+            //   loop
+            //   playsInline
+            //   muted={mutedVideos[index] ?? true}
+            // />
+            <VideoPlayer
               key={`detail-${index}`}
-              src={item.src}
+              videoUrl={item.src}
               className="w-full h-auto object-cover"
-              autoPlay
-              loop
-              playsInline
+              setLoading={setLoading}
             />
           )
         )}
