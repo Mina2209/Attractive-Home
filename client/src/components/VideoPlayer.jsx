@@ -1,8 +1,15 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Hls from "hls.js";
 
-const VideoPlayer = ({ videoUrl, className, setLoading }) => {
+const VideoPlayer = ({
+  videoUrl,
+  className = "",
+  setLoading,
+  defaultMuted = true,
+  showMuteButton = true,
+}) => {
   const videoRef = useRef(null);
+  const [isMuted, setIsMuted] = useState(defaultMuted);
 
   useEffect(() => {
     const video = videoRef.current;
@@ -28,15 +35,31 @@ const VideoPlayer = ({ videoUrl, className, setLoading }) => {
     };
   }, [videoUrl, setLoading]);
 
+  const toggleMute = () => {
+    setIsMuted((prevMuted) => !prevMuted);
+  };
+
+  const isAbsolute = className.includes("absolute");
+
   return (
-    <video
-      className={className}
-      ref={videoRef}
-      autoPlay
-      loop
-      muted
-      playsInline
-    />
+    <div className={`${isAbsolute ? "" : "relative"}`}>
+      <video
+        className={className}
+        ref={videoRef}
+        autoPlay
+        loop
+        muted={isMuted}
+        playsInline
+      />
+      {showMuteButton && (
+        <button
+          onClick={toggleMute}
+          className="absolute right-4 bottom-3/4 transform -translate-y-3/4 bg-black bg-opacity-20 text-white px-3 py-1 rounded-full text-sm z-10 [@media(max-height:750px)]:bottom-2/3 [@media(max-height:750px)]:-translate-y-2/3"
+        >
+          {isMuted ? "Unmute 🔊" : "Mute 🔇"}
+        </button>
+      )}
+    </div>
   );
 };
 
