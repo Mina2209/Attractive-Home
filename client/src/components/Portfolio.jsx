@@ -90,7 +90,7 @@ const Portfolio = ({ setLoading }) => {
       
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="flex flex-col min-h-screen">
-        <div className="relative z-1 max-w-5xl mb-12 grid grid-cols-1 mt-auto">
+        <div className="relative z-1 mb-12 grid grid-cols-1 mt-auto">
           {activeTab === null ? (
             <h2
               className="text-5xl font-bold mb-2 px-6"
