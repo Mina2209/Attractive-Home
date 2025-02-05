@@ -54,7 +54,8 @@ const VideoPlayer = ({
       {showMuteButton && (
         <button
           onClick={toggleMute}
-          className="absolute right-4 bottom-3/4 transform -translate-y-3/4 bg-black bg-opacity-20 text-white px-3 py-1 rounded-full text-sm z-10 [@media(max-height:750px)]:bottom-2/3 [@media(max-height:750px)]:-translate-y-2/3"
+          className="absolute right-0 bottom-3/4 transform -translate-y-3/4 bg-black bg-opacity-10 text-white px-3 py-1 rounded-l-lg text-sm z-10 [@media(max-height:750px)]:bottom-2/3 [@media(max-height:750px)]:-translate-y-2/3"
+          // className="absolute left-0 bottom-11  bg-black bg-opacity-30 text-white px-3 py-1 rounded-r-lg text-sm z-10"
         >
           {isMuted ? "Unmute 🔊" : "Mute 🔇"}
         </button>
