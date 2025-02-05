@@ -10,6 +10,7 @@ const Home = ({ setLoading }) => {
         videoUrl={videoUrl}
         className="absolute inset-0 w-full h-full object-cover"
         setLoading={setLoading}
+        showMuteButton={false}
       />
 
       {/* Dark overlay for better text visibility */}
