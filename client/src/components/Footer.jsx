@@ -113,7 +113,7 @@ const Footer = ({ setLoading }) => {
                 Mina Nassef
               </a>
             </p>
-            <div className="flex justify-start gap-6 flex-wrap">
+            <div className="grid grid-cols-3 gap-6 sm:grid-cols-2 md:grid-cols-6">
               <a
                 href="https://wa.me/971544666066"
                 target="_blank"
