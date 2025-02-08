@@ -38,21 +38,21 @@ const ProjectDetails = ({ setLoading }) => {
               className="w-full h-auto"
             />
           ) : (
-            // <video
-            //   key={`detail-${index}`}
-            //   src={item.src}
-            //   className="w-full h-auto object-cover"
-            //   autoPlay
-            //   loop
-            //   playsInline
-            //   muted={mutedVideos[index] ?? true}
-            // />
-            <VideoPlayer
+            <video
               key={`detail-${index}`}
-              videoUrl={item.src}
+              src={item.src}
               className="w-full h-auto object-cover"
-              setLoading={setLoading}
+              autoPlay
+              loop
+              playsInline
+              muted
             />
+            // <VideoPlayer
+            //   key={`detail-${index}`}
+            //   videoUrl={item.src}
+            //   className="w-full h-auto object-cover"
+            //   setLoading={setLoading}
+            // />
           )
         )}
       </div>
