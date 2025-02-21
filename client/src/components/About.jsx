@@ -39,7 +39,7 @@ const About = ({ setLoading }) => {
                 understanding of spatial harmony.
               </p>
               <p
-                className="text-lg sm:text-xl leading-relaxed sm:leading-10 2xl:leading-loose"
+                className="[@media(max-width:400px)]:hidden text-lg sm:text-xl leading-relaxed sm:leading-10 2xl:leading-loose"
                 style={{ letterSpacing: "0.03em" }}
               >
                 Our team collaborates closely with clients to ensure every

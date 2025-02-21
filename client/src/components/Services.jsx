@@ -21,9 +21,9 @@ const Services = ({ setLoading }) => {
 
       <div className="max-w-7xl mx-auto sm:px-8 lg:px-10 2xl:px-0">
         <div className="flex flex-col min-h-screen">
-          <div className="relative z-1 mb-32 sm:mb-16 grid grid-cols-1 mt-auto">
+          <div className="relative z-1 [@media(max-width:400px)]:mb-14 mb-32 sm:mb-16 grid grid-cols-1 mt-auto">
             <h2
-              className="text-[2.8rem] 2xl:text-[3.2rem] sm:text-5xl font-bold text-white px-8 sm:px-6 lg:px-12 2xl:px-0 tracking-[3px] uppercase"
+              className="[@media(max-width:400px)]:text-[2.5rem] text-[2.8rem] 2xl:text-[3.2rem] sm:text-5xl font-bold text-white px-8 sm:px-6 lg:px-12 2xl:px-0 tracking-[3px] uppercase"
               style={{ lineHeight: "1.5" }}
             >
               We provide a wide range of professional services tailored to your
