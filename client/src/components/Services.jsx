@@ -1,10 +1,7 @@
-import { useState } from "react";
 import servicesData from "../data/servicesData";
 import VideoPlayer from "./VideoPlayer";
 
 const Services = ({ setLoading }) => {
-  const [isPlaying, setIsPlaying] = useState(false);
-
   const videoUrl =
     "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Service-Videos/Services.m3u8";
 
@@ -15,7 +12,7 @@ const Services = ({ setLoading }) => {
         className="absolute inset-0 w-full h-full object-cover"
         setLoading={setLoading}
       />
-  
+
       {/* Dark overlay for better text visibility */}
       <div className="absolute inset-0 bg-black opacity-50"></div>
 
@@ -44,21 +41,12 @@ const Services = ({ setLoading }) => {
                   className="w-full h-48 object-cover"
                 />
               ) : service.video ? (
-                <video
+                <VideoPlayer
                   className="w-full h-48 object-cover"
-                  src={service.video}
-                  loop
-                  muted
-                  playsInline
-                  onMouseEnter={(e) => {
-                    setIsPlaying(true);
-                    e.target.play();
-                  }}
-                  onMouseLeave={(e) => {
-                    setIsPlaying(false);
-                    e.target.pause();
-                    e.target.currentTime = 0;
-                  }}
+                  videoUrl={service.video}
+                  autoPlay={false}
+                  showMuteButton={false}
+                  enableHoverPlay={true}
                 />
               ) : null}
               <div className="p-6">

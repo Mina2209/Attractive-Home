@@ -25,25 +25,17 @@ const PortfolioCategory = ({
 const ProjectCard = ({
   category,
   project,
-  projectIndex,
-  handleMouseEnter,
-  handleMouseLeave,
-  videoRefs,
 }) => (
   <div className="relative group overflow-hidden sm:rounded-lg sm:shadow-lg">
     <Link to={`/portfolio/${category}/${project.id}`} className="block">
       <div className="relative overflow-hidden sm:rounded-lg sm:shadow-lg">
-        <video
-          ref={(el) => {
-            videoRefs.current[`${category}-${projectIndex}`] = el;
-          }}
-          src={project.video}
+        <VideoPlayer
+          videoUrl={project.video}
           className="w-full h-64 object-cover"
-          muted
-          playsInline
-          loop
-          onMouseEnter={() => handleMouseEnter(category, projectIndex)}
-          onMouseLeave={() => handleMouseLeave(category, projectIndex)}
+          enableHoverPlay={true}
+          autoPlay={false}
+          defaultMuted={true}
+          showMuteButton={false}
         />
       </div>
     </Link>
@@ -77,17 +69,16 @@ const Portfolio = ({ setLoading }) => {
   };
 
   const videoUrl =
-    "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Portfolio-videos/Portfolio.m3u8";
-
+    "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Portfolio/Portfolio.m3u8";
 
   return (
     <section className="py-20 md:px-12 lg:px-24 bg-[#1f1f1f] text-white">
-      <VideoPlayer 
+      <VideoPlayer
         videoUrl={videoUrl}
         className="absolute inset-0 w-full h-full object-cover"
         setLoading={setLoading}
       />
-      
+
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="flex flex-col min-h-screen">
         <div className="relative z-1 mb-12 grid grid-cols-1 mt-auto">
