@@ -4,7 +4,7 @@ const Loader = () => {
   return (
     <div className="flex items-center justify-center h-screen bg-gray-900">
       <img 
-        src="/Logo2.png" 
+        src="/Loading-Logo.webp" 
         alt="Loading..." 
         className="animate-pulse h-52 w-auto"
       />
