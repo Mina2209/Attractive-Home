@@ -2,8 +2,7 @@ import servicesData from "../data/servicesData";
 import VideoPlayer from "./VideoPlayer";
 
 const Services = ({ setLoading }) => {
-  const videoUrl =
-    "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Service-Videos/Services.m3u8";
+  const videoUrl = "/Main/Services/master.m3u8";
 
   return (
     <section className="bg-[#1f1f1f]">

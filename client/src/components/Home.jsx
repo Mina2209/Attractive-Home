@@ -1,8 +1,7 @@
 import VideoPlayer from "./VideoPlayer";
 
 const Home = ({ setLoading }) => {
-  const videoUrl =
-  "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Portfolio/Portfolio.m3u8";
+  const videoUrl = "/Main/Home/master.m3u8";
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">

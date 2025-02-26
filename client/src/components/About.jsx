@@ -1,8 +1,7 @@
 import VideoPlayer from "./VideoPlayer";
 
 const About = ({ setLoading }) => {
-  const videoUrl =
-    "https://s3.me-central-1.amazonaws.com/attractivehome.ae/About-Videos/About.m3u8";
+  const videoUrl = "/Main/About/master.m3u8";
 
   return (
     <section className="text-white relative">

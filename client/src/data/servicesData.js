@@ -2,12 +2,12 @@ const servicesData = [
     {
       title: "Construction Management",
       description: "Expert management of construction projects ensuring quality and efficiency.",
-      video: "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Services/Foundation/Foundation.m3u8",
+      video: "/Services/Management/master.m3u8",
     },
     {
       title: "Remodeling",
       description: "Transform your spaces with our high-quality remodeling services.",
-      video: "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Portfolio/Portfolio.m3u8",
+      video: "/Services/Remodeling/master.m3u8",
     },
     // {
     //   title: "Kitchen Remodeling",
@@ -17,22 +17,22 @@ const servicesData = [
     {
       title: "Install Flooring",
       description: "Professional installation of durable and stylish flooring options.",
-      video: "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Services/Flooring/Flooring.m3u8",
+      video: "/Services/Flooring/master.m3u8",
     },
     {
       title: "Exterior Design",
       description: "Transform outdoor spaces with stunning and functional exterior designs.",
-      video: "/Architecture/Baghoum/Cover.mp4",
-    },
-    {
-      title: "Interior Design",
-      description: "Creative and functional interior design solutions tailored to your style and needs.",
-      video: "/Interior/El Tayeb/Cover.mp4",
+      video: "/Services/Exterior/master.m3u8",
     },
     {
       title: "Fit Out",
       description: "Customized fit-out solutions for commercial and residential spaces.",
-      video: "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Services/Fit-Out/Fit-Out.m3u8",
+      video: "/Services/Fit-Out/master.m3u8",
+    },
+    {
+      title: "Interior Design",
+      description: "Creative and functional interior design solutions tailored to your style and needs.",
+      video: "/Services/Interior/master.m3u8",
     },
     {
       title: "Plumbing Fixture Installation",

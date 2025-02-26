@@ -19,8 +19,7 @@ const Footer = ({ setLoading }) => {
 
   const isContactPage = location.pathname === "/contacts";
 
-  const videoUrl =
-    "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Contacts-Videos/Contacts.m3u8";
+  const videoUrl = "/Main/Contacts/master.m3u8";
 
   // 1. Define your icon data array.
   // Each object contains the URL (href) and the FontAwesome icon.
@@ -28,9 +27,15 @@ const Footer = ({ setLoading }) => {
     { href: "https://wa.me/971544666066", icon: faWhatsapp },
     { href: "https://www.instagram.com/attractive_home", icon: faInstagram },
     { href: "https://pin.it/4dHNZjnCY", icon: faPinterest },
-    { href: "https://www.facebook.com/attractive.home.interiors", icon: faFacebook },
+    {
+      href: "https://www.facebook.com/attractive.home.interiors",
+      icon: faFacebook,
+    },
     { href: "https://www.tiktok.com/@attractivehome", icon: faTiktok },
-    { href: "https://www.linkedin.com/company/attractive-home-interior-studio/", icon: faLinkedin },
+    {
+      href: "https://www.linkedin.com/company/attractive-home-interior-studio/",
+      icon: faLinkedin,
+    },
   ];
 
   // 2. Detect the window width and update it on resize.
@@ -56,9 +61,18 @@ const Footer = ({ setLoading }) => {
         {/* First row: 4 icons */}
         <div className="flex justify-start gap-6 mb-4">
           {icons.slice(0, 4).map((item, index) => (
-            <a key={index} href={item.href} target="_blank" rel="noopener noreferrer">
+            <a
+              key={index}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="w-8 h-8 rounded-full bg-white flex justify-center items-center shadow-md transition-transform duration-200 transform hover:scale-110">
-                <FontAwesomeIcon icon={item.icon} size="lg" className="text-black" />
+                <FontAwesomeIcon
+                  icon={item.icon}
+                  size="lg"
+                  className="text-black"
+                />
               </div>
             </a>
           ))}
@@ -66,9 +80,18 @@ const Footer = ({ setLoading }) => {
         {/* Second row: 2 icons */}
         <div className="flex justify-start gap-6">
           {icons.slice(4).map((item, index) => (
-            <a key={index} href={item.href} target="_blank" rel="noopener noreferrer">
+            <a
+              key={index}
+              href={item.href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="w-8 h-8 rounded-full bg-white flex justify-center items-center shadow-md transition-transform duration-200 transform hover:scale-110">
-                <FontAwesomeIcon icon={item.icon} size="lg" className="text-black" />
+                <FontAwesomeIcon
+                  icon={item.icon}
+                  size="lg"
+                  className="text-black"
+                />
               </div>
             </a>
           ))}
@@ -81,9 +104,18 @@ const Footer = ({ setLoading }) => {
     iconContent = (
       <div className="flex justify-start gap-6 flex-wrap">
         {icons.map((item, index) => (
-          <a key={index} href={item.href} target="_blank" rel="noopener noreferrer">
+          <a
+            key={index}
+            href={item.href}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <div className="w-8 h-8 rounded-full bg-white flex justify-center items-center shadow-md transition-transform duration-200 transform hover:scale-110">
-              <FontAwesomeIcon icon={item.icon} size="lg" className="text-black" />
+              <FontAwesomeIcon
+                icon={item.icon}
+                size="lg"
+                className="text-black"
+              />
             </div>
           </a>
         ))}
@@ -99,12 +131,11 @@ const Footer = ({ setLoading }) => {
     >
       {isContactPage && (
         <VideoPlayer
-          videoUrl= {videoUrl}
+          videoUrl={videoUrl}
           className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
           setLoading={setLoading}
           showMuteButton={false}
-        >
-        </VideoPlayer>
+        ></VideoPlayer>
       )}
       <div className="container mx-auto px-12 relative">
         <div className="grid grid-cols-1 space-y-6 gap-8 2xl:gap-32 sm:grid-cols-3 sm:space-y-0">

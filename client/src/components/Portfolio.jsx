@@ -22,10 +22,7 @@ const PortfolioCategory = ({
   </button>
 );
 
-const ProjectCard = ({
-  category,
-  project,
-}) => (
+const ProjectCard = ({ category, project }) => (
   <div className="relative group overflow-hidden sm:rounded-lg sm:shadow-lg">
     <Link to={`/portfolio/${category}/${project.id}`} className="block">
       <div className="relative overflow-hidden sm:rounded-lg sm:shadow-lg">
@@ -68,8 +65,7 @@ const Portfolio = ({ setLoading }) => {
     }
   };
 
-  const videoUrl =
-    "https://s3.me-central-1.amazonaws.com/attractivehome.ae/Portfolio/Portfolio.m3u8";
+  const videoUrl = "/Main/Portfolio/master.m3u8";
 
   return (
     <section className="py-20 md:px-12 lg:px-24 bg-[#1f1f1f] text-white">
