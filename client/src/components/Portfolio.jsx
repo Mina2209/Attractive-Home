@@ -22,7 +22,14 @@ const PortfolioCategory = ({
   </button>
 );
 
-const ProjectCard = ({ category, project }) => (
+const ProjectCard = ({
+  category,
+  project,
+  // projectIndex,
+  // handleMouseEnter,
+  // handleMouseLeave,
+  // videoRefs,
+}) => (
   <div className="relative group overflow-hidden sm:rounded-lg sm:shadow-lg">
     <Link to={`/portfolio/${category}/${project.id}`} className="block">
       <div className="relative overflow-hidden sm:rounded-lg sm:shadow-lg">
@@ -34,13 +41,25 @@ const ProjectCard = ({ category, project }) => (
           defaultMuted={true}
           showMuteButton={false}
         />
+        {/* <video
+          ref={(el) => {
+            videoRefs.current[`${category}-${projectIndex}`] = el;
+          }}
+          src={project.video}
+          className="w-full h-64 object-cover"
+          muted
+          playsInline
+          loop
+          onMouseEnter={() => handleMouseEnter(category, projectIndex)}
+          onMouseLeave={() => handleMouseLeave(category, projectIndex)}
+        /> */}
       </div>
     </Link>
     <div className="mt-4 text-left px-2 sm:px-0">
       <p className="text-sm uppercase">
-        {project.description} — {project.area}
+        {project.description} {/*— {project.area} */}
       </p>
-      <h3 className="text-lg font-bold">{project.title}</h3>
+      <h3 className="text-xl font-bold">{project.title}</h3>
     </div>
   </div>
 );
