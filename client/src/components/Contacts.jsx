@@ -107,15 +107,16 @@ const Contacts = () => {
             <div>
               <p>DUBAI</p>
               <p>+971 43 420732</p>
-              <p>51 1 B ST 787J+73, Deira, Dubai, United Arab Emirates</p>
+              {/* <p>51 1 B ST 787J+73, Deira, Dubai, United Arab Emirates</p> */}
+              <p>79P6+86, Al Qusais, Al Nahda 1, Dubai, United Arab Emirates</p>
             </div>
-            <div>
+            {/* <div>
               <p>Egypt</p>
               <p>+20 100 474 1603</p>
               <p>
                 64 Mohammed Kamel Hussein, Huckstep, El Nozha, Cairo Governorate
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
