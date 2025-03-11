@@ -1,7 +1,8 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, lazy, Suspense } from "react";
 import portfolioData from "../data/portfolioData";
 import { Link } from "react-router-dom";
-import VideoPlayer from "./VideoPlayer";
+
+const VideoPlayer = lazy(() => import("./VideoPlayer"));
 
 const PortfolioCategory = ({
   category,
@@ -33,14 +34,16 @@ const ProjectCard = ({
   <div className="relative group overflow-hidden sm:rounded-lg sm:shadow-lg">
     <Link to={`/portfolio/${category}/${project.id}`} className="block">
       <div className="relative overflow-hidden sm:rounded-lg sm:shadow-lg">
-        <VideoPlayer
-          videoUrl={project.video}
-          className="w-full h-64 object-cover"
-          enableHoverPlay={true}
-          autoPlay={false}
-          defaultMuted={true}
-          showMuteButton={false}
-        />
+        <Suspense fallback={<div>Loading Video...</div>}>
+          <VideoPlayer
+            videoUrl={project.video}
+            className="w-full h-64 object-cover"
+            enableHoverPlay={true}
+            autoPlay={false}
+            defaultMuted={true}
+            showMuteButton={false}
+          />
+        </Suspense>
         {/* <video
           ref={(el) => {
             videoRefs.current[`${category}-${projectIndex}`] = el;
@@ -88,11 +91,13 @@ const Portfolio = ({ setLoading }) => {
 
   return (
     <section className="py-20 md:px-12 lg:px-24 bg-[#1f1f1f] text-white">
-      <VideoPlayer
-        videoUrl={videoUrl}
-        className="absolute inset-0 w-full h-full object-cover"
-        setLoading={setLoading}
-      />
+      <Suspense fallback={<div>Loading Video...</div>}>
+        <VideoPlayer
+          videoUrl={videoUrl}
+          className="absolute inset-0 w-full h-full object-cover"
+          setLoading={setLoading}
+        />
+      </Suspense>
 
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="flex flex-col min-h-screen">
@@ -142,20 +147,22 @@ const Portfolio = ({ setLoading }) => {
       </div>
 
       <div className="max-w-5xl mx-auto grid gap-24 md:grid-cols-2">
-        {(activeTab === null ? Object.keys(portfolioData) : [activeTab]).map(
-          (category) =>
-            portfolioData[category].projects.map((project, projectIndex) => (
-              <ProjectCard
-                key={`${category}-${projectIndex}`}
-                category={category}
-                project={project}
-                projectIndex={projectIndex}
-                handleMouseEnter={handleMouseEnter}
-                handleMouseLeave={handleMouseLeave}
-                videoRefs={videoRefs}
-              />
-            ))
-        )}
+        <Suspense fallback={<div>Loading projects...</div>}>
+          {(activeTab === null ? Object.keys(portfolioData) : [activeTab]).map(
+            (category) =>
+              portfolioData[category].projects.map((project, projectIndex) => (
+                <ProjectCard
+                  key={`${category}-${projectIndex}`}
+                  category={category}
+                  project={project}
+                  projectIndex={projectIndex}
+                  handleMouseEnter={handleMouseEnter}
+                  handleMouseLeave={handleMouseLeave}
+                  videoRefs={videoRefs}
+                />
+              ))
+          )}
+        </Suspense>
       </div>
     </section>
   );

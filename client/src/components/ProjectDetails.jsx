@@ -1,7 +1,8 @@
+import { lazy, Suspense, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import portfolioData from "../data/portfolioData";
-import VideoPlayer from "./VideoPlayer";
-import { useEffect } from "react";
+
+const VideoPlayer = lazy(() => import("./VideoPlayer"));
 
 const ProjectDetails = ({ setLoading }) => {
   const { categoryId, projectId } = useParams();
@@ -36,14 +37,17 @@ const ProjectDetails = ({ setLoading }) => {
               src={item.src}
               alt={`Project ${project.title} Image ${index + 1}`}
               className="w-full h-auto"
+              loading="lazy"
             />
           ) : (
-            <VideoPlayer
-              key={`detail-${index}`}
-              videoUrl={item.src}
-              className="w-full h-auto object-cover"
-              setLoading={setLoading}
-            />
+            <Suspense fallback={<div>Loading Video...</div>}>
+              <VideoPlayer
+                key={`detail-${index}`}
+                videoUrl={item.src}
+                className="w-full h-auto object-cover"
+                setLoading={setLoading}
+              />
+            </Suspense>
             // <video
             //   key={`detail-${index}`}
             //   src={item.src}
