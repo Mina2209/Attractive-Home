@@ -7,7 +7,7 @@ const servicesData = [
     {
       title: "Remodeling",
       description: "Transform your spaces with our high-quality remodeling services.",
-      video: "/Services/Remodeling/master.m3u8",
+      video: "/Main/Portfolio/master.m3u8",
     },
     // {
     //   title: "Kitchen Remodeling",
@@ -22,7 +22,7 @@ const servicesData = [
     {
       title: "Exterior Design",
       description: "Transform outdoor spaces with stunning and functional exterior designs.",
-      video: "/Services/Exterior/master.m3u8",
+      video: "Architecture/Baghoum/Cover/master.m3u8",
     },
     {
       title: "Fit Out",
@@ -32,7 +32,7 @@ const servicesData = [
     {
       title: "Interior Design",
       description: "Creative and functional interior design solutions tailored to your style and needs.",
-      video: "/Services/Interior/master.m3u8",
+      video: "/Interior/El-Tayeb/Cover/master.m3u8",
     },
     {
       title: "Plumbing Fixture Installation",
