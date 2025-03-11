@@ -1,7 +1,5 @@
 import { useEffect, useRef, useState } from "react";
 import Hls from "hls.js";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { faVolumeUp, faVolumeMute } from "@fortawesome/free-solid-svg-icons";
 
 const VideoPlayer = ({
   videoUrl,
