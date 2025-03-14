@@ -67,7 +67,7 @@ const ProjectCard = ({
   </div>
 );
 
-const Portfolio = ({ setLoading }) => {
+const Portfolio = () => {
   const [activeTab, setActiveTab] = useState(null);
   const videoRefs = useRef({});
   const activeCategory = portfolioData[activeTab];
@@ -95,7 +95,6 @@ const Portfolio = ({ setLoading }) => {
         <VideoPlayer
           videoUrl={videoUrl}
           className="absolute inset-0 w-full h-full object-cover"
-          setLoading={setLoading}
         />
       </Suspense>
 

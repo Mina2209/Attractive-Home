@@ -4,14 +4,10 @@ import portfolioData from "../data/portfolioData";
 
 const VideoPlayer = lazy(() => import("./VideoPlayer"));
 
-const ProjectDetails = ({ setLoading }) => {
+const ProjectDetails = () => {
   const { categoryId, projectId } = useParams();
   const category = portfolioData[categoryId];
   const project = category.projects.find((proj) => proj.id === projectId);
-
-  useEffect(() => {
-    setLoading(false);
-  }, [setLoading]);
 
   if (!project)
     return (
@@ -37,7 +33,7 @@ const ProjectDetails = ({ setLoading }) => {
               src={item.src}
               alt={`Project ${project.title} Image ${index + 1}`}
               className="w-full h-auto"
-              loading="lazy"
+              // loading="lazy"
             />
           ) : (
             <Suspense fallback={<div>Loading Video...</div>}>
@@ -45,7 +41,6 @@ const ProjectDetails = ({ setLoading }) => {
                 key={`detail-${index}`}
                 videoUrl={item.src}
                 className="w-full h-auto object-cover"
-                setLoading={setLoading}
               />
             </Suspense>
             // <video

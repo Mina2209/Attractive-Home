@@ -1,6 +1,6 @@
 import VideoPlayer from "./VideoPlayer";
 
-const About = ({ setLoading }) => {
+const About = () => {
   const videoUrl = "/Main/About/master.m3u8";
 
   return (
@@ -8,7 +8,6 @@ const About = ({ setLoading }) => {
       <VideoPlayer
         videoUrl={videoUrl}
         className="absolute inset-0 w-full h-full object-cover"
-        setLoading={setLoading}
       />
       {/* Dark overlay for better text visibility */}
       <div className="absolute inset-0 bg-black opacity-50"></div>

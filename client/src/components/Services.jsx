@@ -1,7 +1,7 @@
 import servicesData from "../data/servicesData";
 import VideoPlayer from "./VideoPlayer";
 
-const Services = ({ setLoading }) => {
+const Services = () => {
   const videoUrl = "/Main/Services/master.m3u8";
 
   return (
@@ -9,7 +9,6 @@ const Services = ({ setLoading }) => {
       <VideoPlayer
         videoUrl={videoUrl}
         className="absolute inset-0 w-full h-full object-cover"
-        setLoading={setLoading}
       />
 
       {/* Dark overlay for better text visibility */}

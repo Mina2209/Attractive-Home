@@ -1,6 +1,6 @@
 import VideoPlayer from "./VideoPlayer";
 
-const Home = ({ setLoading }) => {
+const Home = () => {
   const videoUrl = "/Main/Home/master.m3u8";
 
   return (
@@ -8,7 +8,6 @@ const Home = ({ setLoading }) => {
       <VideoPlayer
         videoUrl={videoUrl}
         className="absolute inset-0 w-full h-full object-cover"
-        setLoading={setLoading}
         showMuteButton={false}
       />
 

@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faInstagram,
@@ -11,7 +11,7 @@ import {
 import { Link, useLocation } from "react-router-dom";
 import VideoPlayer from "./VideoPlayer";
 
-const Footer = ({ setLoading }) => {
+const Footer = () => {
   const location = useLocation();
   const isActive = (path) => {
     return location.pathname === path ? "text-gray-300" : "text-white";
@@ -124,20 +124,15 @@ const Footer = ({ setLoading }) => {
   }
 
   return (
-    <footer
-      className={`relative text-white py-32 overflow-hidden ${
-        isContactPage ? "" : "bg-[#181818]"
-      }`}
-    >
+    <footer className="relative text-white py-32 overflow-hidden bg-[#181818]">
       {isContactPage && (
         <VideoPlayer
           videoUrl={videoUrl}
-          className="absolute top-0 left-0 w-full h-full object-cover z-[-1]"
-          setLoading={setLoading}
+          className="absolute top-0 left-0 w-full h-full object-cover"
           showMuteButton={false}
         ></VideoPlayer>
       )}
-      <div className="container mx-auto px-12 relative">
+      <div className="container mx-auto px-12 relative z-[0]">
         <div className="grid grid-cols-1 space-y-6 gap-8 2xl:gap-32 sm:grid-cols-3 sm:space-y-0">
           {/* Left Section */}
           <div>
