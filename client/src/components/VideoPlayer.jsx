@@ -16,7 +16,6 @@ const VideoPlayer = ({
   useEffect(() => {
     const video = videoRef.current;
 
-    // Set up HLS or direct video source
     if (Hls.isSupported()) {
       const hls = new Hls();
       hls.loadSource(videoUrl);
@@ -24,27 +23,14 @@ const VideoPlayer = ({
       hls.on(Hls.Events.MANIFEST_PARSED, () => {
         if (!autoPlay) {
           setTimeout(() => {
-            video.currentTime = 0.1; // Small offset to render a frame
+            video.currentTime = 0.1; // Fix for Instagram not showing videos
           }, 100);
         }
       });
     } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
       video.src = videoUrl;
     }
-
-    // If autoplay is false, force display of the first frame.
-    if (!autoPlay) {
-      const handleLoadedData = () => {
-        // Set a slight offset to ensure a frame is rendered.
-        video.currentTime = 0.1;
-      };
-
-      video.addEventListener("loadeddata", handleLoadedData);
-      return () => {
-        video.removeEventListener("loadeddata", handleLoadedData);
-      };
-    }
-  }, [videoUrl, autoPlay]);
+  }, [videoUrl]);
 
   const toggleMute = () => {
     setIsMuted((prevMuted) => !prevMuted);
@@ -82,7 +68,9 @@ const VideoPlayer = ({
       {showMuteButton && (
         <button
           onClick={toggleMute}
-          className="absolute right-0 bottom-3/4 transform -translate-y-3/4 bg-black bg-opacity-10 text-white px-3 py-1 rounded-l-lg text-sm z-10 [@media(max-height:750px)]:bottom-2/3 [@media(max-height:750px)]:-translate-y-2/3 [@media(max-height:750px)]:bottom-[60%] [@media(max-height:750px)]:-translate-y-[60%]"
+          className="absolute right-0 bottom-3/4 transform -translate-y-3/4 bg-black bg-opacity-10 text-white px-3 py-1 rounded-l-lg text-sm z-10 [@media(max-height:750px)]:bottom-2/3 [@media(max-height:750px)]:-translate-y-2/3
+          [@media(max-height:750px)]:bottom-[60%] 
+          [@media(max-height:750px)]:-translate-y-[60%]"
         >
           {isMuted ? "Unmute 🔊" : "Mute 🔇"}
         </button>
