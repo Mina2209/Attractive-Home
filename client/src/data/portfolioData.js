@@ -11,7 +11,7 @@ const portfolioData = {
         title: "Mr. Ahmed Baghoum's Villa",
         area: "750 m²",
         description: "Architectural design",
-        video: "Architecture/Baghoum/Cover/master.m3u8",
+        video: "/Architecture/Baghoum/Cover/master.m3u8",
         details: [
           { type: "video", src: "/Architecture/Baghoum/Intro/master.m3u8" },
           { type: "image", src: "/Architecture/Baghoum/1.webp" },

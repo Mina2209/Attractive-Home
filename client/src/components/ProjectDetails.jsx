@@ -1,8 +1,7 @@
-import { lazy, Suspense, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import portfolioData from "../data/portfolioData";
-
-const VideoPlayer = lazy(() => import("./VideoPlayer"));
+import VideoPlayer from "./VideoPlayer";
+import { Link } from "react-router-dom";
 
 const ProjectDetails = () => {
   const { categoryId, projectId } = useParams();
@@ -11,10 +10,29 @@ const ProjectDetails = () => {
 
   if (!project)
     return (
-      <div className="flex flex-col bg-[#1f1f1f] text-white">
-        <div className="h-40"></div>
-        <div className="text-4xl font-bold mb-12 text-center px-4">
-          Project data not found
+      <div className="flex flex-col items-center justify-center h-screen text-center bg-[#1f1f1f] px-6">
+        <div className="flex flex-col">
+          <Link
+            to="/portfolio"
+            className="text-lg flex items-center text-blue-300 hover:text-blue-400 mt-4 self-start"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 mr-2"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+            Back to Portfolio
+          </Link>
+          <h1 className="text-3xl sm:text-5xl font-bold mt-4 text-white">
+            Project data not found!
+          </h1>
         </div>
       </div>
     );
@@ -33,25 +51,13 @@ const ProjectDetails = () => {
               src={item.src}
               alt={`Project ${project.title} Image ${index + 1}`}
               className="w-full h-auto"
-              // loading="lazy"
             />
           ) : (
-            <Suspense fallback={<div>Loading Video...</div>}>
-              <VideoPlayer
-                key={`detail-${index}`}
-                videoUrl={item.src}
-                className="w-full h-auto object-cover"
-              />
-            </Suspense>
-            // <video
-            //   key={`detail-${index}`}
-            //   src={item.src}
-            //   className="w-full h-auto object-cover"
-            //   autoPlay
-            //   loop
-            //   playsInline
-            //   muted
-            // />
+            <VideoPlayer
+              key={`detail-${index}`}
+              videoUrl={item.src}
+              className="w-full h-auto object-cover"
+            />
           )
         )}
       </div>
