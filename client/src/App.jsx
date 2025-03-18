@@ -1,39 +1,37 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
 import WhatsAppButton from "./components/WhatsAppButton";
+import Footer from "./components/Footer";
+import ScrollToTop from "./utils/ScrollToTop";
+
+import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
-import Contacts from "./components/Contacts";
-import Footer from "./components/Footer";
-import Services from "./components/Services";
 import ProjectDetails from "./components/ProjectDetails";
-
-const RouteHandler = () => {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/portfolio" element={<Portfolio />} />
-      <Route
-        path="/portfolio/:categoryId/:projectId"
-        element={<ProjectDetails />}
-      />
-      <Route path="/contacts" element={<Contacts />} />
-      <Route path="/services" element={<Services />} />
-    </Routes>
-  );
-};
+import Contacts from "./components/Contacts";
+import Services from "./components/Services";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
     <Router>
-      <div>
-        <Navbar />
-        <RouteHandler />
-        <WhatsAppButton />
-        <Footer />
-      </div>
+      <Navbar />
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio/:categoryId" element={<Portfolio />} />
+        <Route
+          path="/portfolio/:categoryId/:projectId"
+          element={<ProjectDetails />}
+        />
+        <Route path="/contacts" element={<Contacts />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+      <WhatsAppButton />
+      <Footer />
     </Router>
   );
 }

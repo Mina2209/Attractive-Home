@@ -1,61 +1,36 @@
-import React, { useState, useRef, lazy, Suspense } from "react";
+import { useRef} from "react";
 import portfolioData from "../data/portfolioData";
-import { Link } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
+import VideoPlayer from "./VideoPlayer";
 
-const VideoPlayer = lazy(() => import("./VideoPlayer"));
+const PortfolioCategory = ({ category, activeTab, portfolioData }) => {
+  const isActive = activeTab === category;
 
-const PortfolioCategory = ({
-  category,
-  activeTab,
-  setActiveTab,
-  portfolioData,
-}) => (
-  <button
-    onClick={() => setActiveTab(category)}
-    className={`pb-2 text-xl font-semibold ${
-      activeTab === category
-        ? "border-b-2 border-gray-50"
-        : "border-b text-white"
-    } transition-colors duration-200 uppercase`}
-    aria-label={`View projects for ${portfolioData[category].title}`}
-  >
-    {portfolioData[category].title}
-  </button>
-);
+  return (
+    <Link
+      to={`/portfolio/${category}`}
+      className={`pb-2 text-xl font-semibold text-center ${
+        isActive ? "border-b-2 border-gray-50" : "border-b text-white"
+      } transition-colors duration-200 uppercase`}
+      aria-label={`View projects for ${portfolioData[category].title}`}
+    >
+      {portfolioData[category].title}
+    </Link>
+  );
+};
 
-const ProjectCard = ({
-  category,
-  project,
-  // projectIndex,
-  // handleMouseEnter,
-  // handleMouseLeave,
-  // videoRefs,
-}) => (
+const ProjectCard = ({ category, project }) => (
   <div className="relative group overflow-hidden sm:rounded-lg sm:shadow-lg">
     <Link to={`/portfolio/${category}/${project.id}`} className="block">
       <div className="relative overflow-hidden sm:rounded-lg sm:shadow-lg">
-        <Suspense fallback={<div>Loading Video...</div>}>
-          <VideoPlayer
-            videoUrl={project.video}
-            className="w-full h-64 object-cover"
-            enableHoverPlay={true}
-            autoPlay={false}
-            defaultMuted={true}
-            showMuteButton={false}
-          />
-        </Suspense>
-        {/* <video
-          ref={(el) => {
-            videoRefs.current[`${category}-${projectIndex}`] = el;
-          }}
-          src={project.video}
+        <VideoPlayer
+          videoUrl={project.video}
           className="w-full h-64 object-cover"
-          muted
-          playsInline
-          loop
-          onMouseEnter={() => handleMouseEnter(category, projectIndex)}
-          onMouseLeave={() => handleMouseLeave(category, projectIndex)}
-        /> */}
+          enableHoverPlay={true}
+          autoPlay={false}
+          defaultMuted={true}
+          showMuteButton={false}
+        />
       </div>
     </Link>
     <div className="mt-4 text-left px-2 sm:px-0">
@@ -68,9 +43,43 @@ const ProjectCard = ({
 );
 
 const Portfolio = () => {
-  const [activeTab, setActiveTab] = useState(null);
+  const { categoryId } = useParams();
+  const navigate = useNavigate();
   const videoRefs = useRef({});
-  const activeCategory = portfolioData[activeTab];
+
+  // Use categoryId from URL params or null if not specified
+  const activeTab = categoryId || null;
+  const activeCategory = categoryId ? portfolioData[categoryId] : null;
+
+  if (categoryId && !portfolioData[categoryId]) {
+    return (
+      <div className="flex flex-col items-center justify-center h-screen text-center bg-[#1f1f1f] px-6">
+        <div className="flex flex-col">
+          <Link
+            to="/portfolio"
+            className="text-lg flex items-center text-blue-300 hover:text-blue-400 mt-4 self-start"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5 mr-2"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                clipRule="evenodd"
+              />
+            </svg>
+            Back to Portfolio
+          </Link>
+          <h1 className="text-3xl sm:text-5xl font-bold mt-4 text-white">
+            Category not found!
+          </h1>
+        </div>
+      </div>
+    );
+  }
 
   const handleMouseEnter = (category, projectIndex) => {
     const videoKey = `${category}-${projectIndex}`;
@@ -91,12 +100,10 @@ const Portfolio = () => {
 
   return (
     <section className="py-20 md:px-12 lg:px-24 bg-[#1f1f1f] text-white">
-      <Suspense fallback={<div>Loading Video...</div>}>
-        <VideoPlayer
-          videoUrl={videoUrl}
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-      </Suspense>
+      <VideoPlayer
+        videoUrl={videoUrl}
+        className="absolute inset-0 w-full h-full object-cover"
+      />
 
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="flex flex-col min-h-screen">
@@ -138,7 +145,6 @@ const Portfolio = () => {
               key={category}
               category={category}
               activeTab={activeTab}
-              setActiveTab={setActiveTab}
               portfolioData={portfolioData}
             />
           ))}
@@ -146,22 +152,20 @@ const Portfolio = () => {
       </div>
 
       <div className="max-w-5xl mx-auto grid gap-24 md:grid-cols-2">
-        <Suspense fallback={<div>Loading projects...</div>}>
-          {(activeTab === null ? Object.keys(portfolioData) : [activeTab]).map(
-            (category) =>
-              portfolioData[category].projects.map((project, projectIndex) => (
-                <ProjectCard
-                  key={`${category}-${projectIndex}`}
-                  category={category}
-                  project={project}
-                  projectIndex={projectIndex}
-                  handleMouseEnter={handleMouseEnter}
-                  handleMouseLeave={handleMouseLeave}
-                  videoRefs={videoRefs}
-                />
-              ))
-          )}
-        </Suspense>
+        {(activeTab === null ? Object.keys(portfolioData) : [activeTab]).map(
+          (category) =>
+            portfolioData[category].projects.map((project, projectIndex) => (
+              <ProjectCard
+                key={`${category}-${projectIndex}`}
+                category={category}
+                project={project}
+                projectIndex={projectIndex}
+                handleMouseEnter={handleMouseEnter}
+                handleMouseLeave={handleMouseLeave}
+                videoRefs={videoRefs}
+              />
+            ))
+        )}
       </div>
     </section>
   );
