@@ -20,6 +20,13 @@ const VideoPlayer = ({
       const hls = new Hls();
       hls.loadSource(videoUrl);
       hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED, () => {
+        if (!autoPlay) {
+          setTimeout(() => {
+            video.currentTime = 0.1; // Small offset to render a frame
+          }, 100);
+        }
+      });
     } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
       video.src = videoUrl;
     }
