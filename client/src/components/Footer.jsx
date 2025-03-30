@@ -176,17 +176,26 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/portfolio/architectural" className="hover:text-gray-300">
+                <Link
+                  to="/portfolio/architectural"
+                  className={`hover:text-gray-300 ${isActive("/portfolio/architectural")}`}
+                >
                   Architectural Design
                 </Link>
               </li>
               <li>
-                <Link to="/portfolio/interior" className="hover:text-gray-300">
+                <Link
+                  to="/portfolio/interior"
+                  className={`hover:text-gray-300 ${isActive("/portfolio/interior")}`}
+                >
                   Interior Design
                 </Link>
               </li>
               <li>
-                <Link to="/portfolio/fit" className="hover:text-gray-300">
+                <Link
+                  to="/portfolio/fit"
+                  className={`hover:text-gray-300 ${isActive("/portfolio/fit")}`}
+                >
                   Fit-Out Interiors
                 </Link>
               </li>
