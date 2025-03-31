@@ -11,6 +11,7 @@ import ProjectDetails from "./components/ProjectDetails";
 import Contacts from "./components/Contacts";
 import Services from "./components/Services";
 import NotFound from "./components/NotFound";
+import AluminumSkirting from "./components/AluminumSkirting";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           path="/portfolio/:categoryId/:projectId"
           element={<ProjectDetails />}
         />
+        <Route path="/aluminum-skirting" element={<AluminumSkirting />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/services" element={<Services />} />
         <Route path="*" element={<NotFound />} />

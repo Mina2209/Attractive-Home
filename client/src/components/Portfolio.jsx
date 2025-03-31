@@ -1,6 +1,6 @@
-import { useRef} from "react";
+import { useRef } from "react";
 import portfolioData from "../data/portfolioData";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import VideoPlayer from "./VideoPlayer";
 
 const PortfolioCategory = ({ category, activeTab, portfolioData }) => {
@@ -44,7 +44,6 @@ const ProjectCard = ({ category, project }) => (
 
 const Portfolio = () => {
   const { categoryId } = useParams();
-  const navigate = useNavigate();
   const videoRefs = useRef({});
 
   // Use categoryId from URL params or null if not specified
@@ -102,10 +101,26 @@ const Portfolio = () => {
     <section className="py-20 md:px-12 lg:px-24 bg-[#1f1f1f] text-white">
       <VideoPlayer
         videoUrl={videoUrl}
+        showMuteButton={false}
         className="absolute inset-0 w-full h-full object-cover"
       />
 
       <div className="absolute inset-0 bg-black opacity-50"></div>
+      <div
+        className="absolute right-0 opacity-70 bottom-3/4 transform -translate-y-3/4 px-3 [@media(max-height:750px)]:bottom-2/3 [@media(max-height:750px)]:-translate-y-2/3
+          [@media(max-height:750px)]:bottom-[60%] 
+          [@media(max-height:750px)]:-translate-y-[60%]"
+      >
+        <span className="absolute top-[-20px] left-0 bg-gray-800 text-white text-xs font-semibold py-1 px-3 rounded-full">
+          Pioneer
+        </span>
+        <Link
+          to="/aluminum-skirting"
+          className="bg-white text-gray-900 text-xl font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-200 transition-all duration-300"
+        >
+          Explore Aluminum Skirting
+        </Link>
+      </div>
       <div className="flex flex-col min-h-screen">
         <div className="relative z-1 mb-12 grid grid-cols-1 mt-auto">
           {activeTab === null ? (
@@ -166,6 +181,17 @@ const Portfolio = () => {
               />
             ))
         )}
+        <div className="relative group overflow-hidden sm:rounded-lg sm:shadow-lg bg-gray-800 p-6 flex flex-col items-center justify-center">
+          <h3 className="text-xl font-bold text-white mb-4">
+            Aluminum Skirting Profiles
+          </h3>
+          <Link
+            to="/aluminum-skirting"
+            className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300"
+          >
+            Learn More
+          </Link>
+        </div>
       </div>
     </section>
   );
