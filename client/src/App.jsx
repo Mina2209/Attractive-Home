@@ -27,7 +27,7 @@ function App() {
           path="/portfolio/:categoryId/:projectId"
           element={<ProjectDetails />}
         />
-        <Route path="/aluminum-skirting" element={<AluminumSkirting />} />
+        <Route path="/portfolio/aluminum-skirting" element={<AluminumSkirting />} />
         <Route path="/contacts" element={<Contacts />} />
         <Route path="/services" element={<Services />} />
         <Route path="*" element={<NotFound />} />

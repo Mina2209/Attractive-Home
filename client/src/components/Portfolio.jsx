@@ -115,7 +115,7 @@ const Portfolio = () => {
           Pioneer
         </span>
         <Link
-          to="/aluminum-skirting"
+          to="/portfolio/aluminum-skirting"
           className="bg-white text-gray-900 text-xl font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-200 transition-all duration-300"
         >
           Explore Aluminum Skirting
@@ -186,7 +186,7 @@ const Portfolio = () => {
             Aluminum Skirting Profiles
           </h3>
           <Link
-            to="/aluminum-skirting"
+            to="/portfolio/aluminum-skirting"
             className="bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg transition duration-300"
           >
             Learn More
