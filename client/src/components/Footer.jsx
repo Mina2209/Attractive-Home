@@ -210,7 +210,7 @@ const Footer = () => {
               <br />
               Developed by{" "}
               <a
-                href="https://www.linkedin.com/in/mina-nassef-32203a246/"
+                href="https://wa.me/201202640992"
                 target="_blank"
                 rel="noopener noreferrer"
               >
