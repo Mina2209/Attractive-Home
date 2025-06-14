@@ -178,7 +178,9 @@ const Footer = () => {
               <li>
                 <Link
                   to="/portfolio/architectural"
-                  className={`hover:text-gray-300 ${isActive("/portfolio/architectural")}`}
+                  className={`hover:text-gray-300 ${isActive(
+                    "/portfolio/architectural"
+                  )}`}
                 >
                   Architectural Design
                 </Link>
@@ -186,7 +188,9 @@ const Footer = () => {
               <li>
                 <Link
                   to="/portfolio/interior"
-                  className={`hover:text-gray-300 ${isActive("/portfolio/interior")}`}
+                  className={`hover:text-gray-300 ${isActive(
+                    "/portfolio/interior"
+                  )}`}
                 >
                   Interior Design
                 </Link>
@@ -194,7 +198,9 @@ const Footer = () => {
               <li>
                 <Link
                   to="/portfolio/fit"
-                  className={`hover:text-gray-300 ${isActive("/portfolio/fit")}`}
+                  className={`hover:text-gray-300 ${isActive(
+                    "/portfolio/fit"
+                  )}`}
                 >
                   Fit-Out Interiors
                 </Link>
@@ -213,8 +219,9 @@ const Footer = () => {
                 href="https://wa.me/201202640992"
                 target="_blank"
                 rel="noopener noreferrer"
+                className="font-bold text-yellow-100 hover:text-yellow-50 transition-colors duration-200"
               >
-                Mina Nassef
+                Mina&nbsp;Nassef
               </a>
             </p>
             {iconContent}
