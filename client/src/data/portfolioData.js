@@ -860,6 +860,1255 @@ const portfolioData = {
           { type: "image", src: "/Interior/Nabras/45.webp" },
         ],
       },
+      {
+        id: "project-11",
+        title: "Mr. Ahmed El Haje's Villa",
+        area: "750 m²",
+        description: "Interior design",
+        video: "/Interior/Ahmed-El-Haje/Cover/master.m3u8",
+        details: [
+          {
+            folder: "BEDROOM 1",
+            items: [
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/1.webp",
+              },
+              // { type: "image", src: "/Interior/Ahmed-El-Haje/BEDROOM 1/2.webp" },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/3.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/4.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/5.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/6.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/7.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/8.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/9.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/10.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/11.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/12.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/13.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/14.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/15.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/16.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/17.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/18.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/19.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/20.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/21.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/22.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/23.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/24.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/25.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/26.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/27.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/28.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/29.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/30.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 1/31.webp",
+              },
+              // { type: "image", src: "/Interior/Ahmed-El-Haje/BEDROOM 1/32.webp" },
+            ],
+          },
+          {
+            folder: "BEDROOM 2",
+            items: [
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 2/1.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 2/2.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 2/3.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 2/4.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 2/5.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 2/6.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 2/7.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 2/8.webp",
+              },
+            ],
+          },
+          {
+            folder: "BEDROOM 3",
+            items: [
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 3/1.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 3/2.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 3/3.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 3/4.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 3/5.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 3/6.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 3/7.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 3/8.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 3/9.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 3/10.webp",
+              },
+            ],
+          },
+          {
+            folder: "BEDROOM 4",
+            items: [
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 4/1.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 4/2.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 4/3.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 4/4.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 4/5.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 4/6.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 4/7.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 4/8.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/BEDROOM 4/9.webp",
+              },
+            ],
+          },
+          {
+            folder: "GIRL BEDROOM",
+            items: [
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/GIRL BEDROOM/1.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/GIRL BEDROOM/2.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/GIRL BEDROOM/3.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/GIRL BEDROOM/4.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/GIRL BEDROOM/5.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/GIRL BEDROOM/6.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/GIRL BEDROOM/7.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/GIRL BEDROOM/8.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/GIRL BEDROOM/9.webp",
+              },
+            ],
+          },
+          {
+            folder: "FAMILY HALL",
+            items: [
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/1.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/2.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/3.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/4.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/5.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/6.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/7.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/8.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/9.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/10.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/11.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/12.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/13.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/14.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/15.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/16.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/17.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/18.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/19.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/20.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/21.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/22.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/23.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/24.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/25.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/26.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/27.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/FAMILY HALL&KITCHEN/28.webp",
+              },
+            ],
+          },
+          {
+            folder: "KITCHEN",
+            items: [
+              { type: "image", src: "/Interior/Ahmed-El-Haje/KITCHEN/1.webp" },
+              { type: "image", src: "/Interior/Ahmed-El-Haje/KITCHEN/2.webp" },
+              { type: "image", src: "/Interior/Ahmed-El-Haje/KITCHEN/3.webp" },
+              { type: "image", src: "/Interior/Ahmed-El-Haje/KITCHEN/4.webp" },
+              { type: "image", src: "/Interior/Ahmed-El-Haje/KITCHEN/5.webp" },
+              { type: "image", src: "/Interior/Ahmed-El-Haje/KITCHEN/6.webp" },
+            ],
+          },
+          {
+            folder: "GYM",
+            items: [
+              { type: "image", src: "/Interior/Ahmed-El-Haje/GYM/1.webp" },
+              { type: "image", src: "/Interior/Ahmed-El-Haje/GYM/2.webp" },
+              { type: "image", src: "/Interior/Ahmed-El-Haje/GYM/3.webp" },
+              { type: "image", src: "/Interior/Ahmed-El-Haje/GYM/4.webp" },
+              { type: "image", src: "/Interior/Ahmed-El-Haje/GYM/5.webp" },
+            ],
+          },
+          {
+            folder: "LAUNDRY",
+            items: [
+              { type: "image", src: "/Interior/Ahmed-El-Haje/LANDU/1.webp" },
+              { type: "image", src: "/Interior/Ahmed-El-Haje/LANDU/2.webp" },
+            ],
+          },
+          {
+            folder: "LOBBY",
+            items: [
+              { type: "image", src: "/Interior/Ahmed-El-Haje/LOBBY/1.webp" },
+              { type: "image", src: "/Interior/Ahmed-El-Haje/LOBBY/2.webp" },
+              { type: "image", src: "/Interior/Ahmed-El-Haje/LOBBY/3.webp" },
+              { type: "image", src: "/Interior/Ahmed-El-Haje/LOBBY/4.webp" },
+              { type: "image", src: "/Interior/Ahmed-El-Haje/LOBBY/5.webp" },
+            ],
+          },
+          {
+            folder: "MAJLIS & WC",
+            items: [
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/MAJLIS&WC/1.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/MAJLIS&WC/2.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/MAJLIS&WC/3.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/MAJLIS&WC/4.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/MAJLIS&WC/5.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/MAJLIS&WC/6.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/MAJLIS&WC/7.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/MAJLIS&WC/8.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/MAJLIS&WC/9.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/MAJLIS&WC/10.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/MAJLIS&WC/11.webp",
+              },
+            ],
+          },
+          {
+            folder: "PANTRY",
+            items: [
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/PANTRY &FAMILY HALL/1.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/PANTRY &FAMILY HALL/2.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/PANTRY &FAMILY HALL/3.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/PANTRY &FAMILY HALL/4.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/PANTRY &FAMILY HALL/5.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/PANTRY &FAMILY HALL/6.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/PANTRY &FAMILY HALL/7.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/PANTRY &FAMILY HALL/8.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/PANTRY &FAMILY HALL/9.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/PANTRY &FAMILY HALL/10.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/PANTRY &FAMILY HALL/11.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/PANTRY &FAMILY HALL/12.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/PANTRY &FAMILY HALL/13.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/PANTRY &FAMILY HALL/14.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/PANTRY &FAMILY HALL/15.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/PANTRY &FAMILY HALL/16.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/PANTRY &FAMILY HALL/17.webp",
+              },
+            ],
+          },
+          {
+            folder: "WOMEN MAJLIS & WC",
+            items: [
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/WOMEN MAJLIS&WC/1.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/WOMEN MAJLIS&WC/2.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/WOMEN MAJLIS&WC/3.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/WOMEN MAJLIS&WC/4.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/WOMEN MAJLIS&WC/5.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/WOMEN MAJLIS&WC/6.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/WOMEN MAJLIS&WC/7.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/WOMEN MAJLIS&WC/8.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ahmed-El-Haje/WOMEN MAJLIS&WC/9.webp",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "project-12",
+        title: "Mr. Ziad El Haje's Villa",
+        area: "750 m²",
+        description: "Interior design",
+        video: "/Interior/Ziad-El-Haje/Cover/master.m3u8",
+        details: [
+          {
+            folder: "Master Bedroom ",
+            items: [
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/1.webp",
+              },
+              // {
+              //   type: "image",
+              //   src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/2.webp",
+              // },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/3.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/4.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/5.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/6.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/7.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/8.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/9.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/10.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/11.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/12.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/13.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/14.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/15.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/16.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/17.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/18.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/19.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/20.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/21.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/22.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/23.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/24.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/25.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MASTER BEDROOM/26.webp",
+              },
+            ],
+          },
+          {
+            folder: "BEDROOM ",
+            items: [
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BEDROOM/1.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BEDROOM/2.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BEDROOM/3.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BEDROOM/4.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BEDROOM/5.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BEDROOM/6.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BEDROOM/7.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BEDROOM/8.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BEDROOM/9.webp",
+              },
+            ],
+          },
+          {
+            folder: "BOY BEDROOM 1",
+            items: [
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 1/1.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 1/2.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 1/3.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 1/4.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 1/5.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 1/6.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 1/7.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 1/8.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 1/9.webp",
+              },
+            ],
+          },
+          {
+            folder: "BOY BEDROOM 2",
+            items: [
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 2/1.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 2/2.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 2/3.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 2/4.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 2/5.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 2/6.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 2/7.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 2/8.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 2/9.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 2/10.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 2/11.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/BOY BEDROOM 2/12.webp",
+              },
+            ],
+          },
+          {
+            folder: "Girl BEDROOM",
+            items: [
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/Girl BEDROOM/1.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/Girl BEDROOM/2.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/Girl BEDROOM/3.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/Girl BEDROOM/4.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/Girl BEDROOM/5.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/Girl BEDROOM/6.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/Girl BEDROOM/7.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/Girl BEDROOM/8.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/Girl BEDROOM/9.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/Girl BEDROOM/10.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/Girl BEDROOM/11.webp",
+              },
+            ],
+          },
+          {
+            folder: "Family Hall",
+            items: [
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/1.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/2.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/3.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/4.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/5.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/6.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/7.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/8.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/9.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/10.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/11.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/12.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/13.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/14.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/15.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/16.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/17.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/18.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/19.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/20.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/21.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/22.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/23.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/24.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/25.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/26.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/27.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/28.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/29.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/30.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/31.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/32.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/33.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/34.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/35.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/36.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/37.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/38.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/39.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/40.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/41.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/42.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/43.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/44.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/45.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/46.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/47.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/FAMILY HALL/48.webp",
+              },
+            ],
+          },
+          {
+            folder: "KITCHEN",
+            items: [
+              { type: "image", src: "/Interior/Ziad-El-Haje/KITCHEN/1.webp" },
+              { type: "image", src: "/Interior/Ziad-El-Haje/KITCHEN/2.webp" },
+              { type: "image", src: "/Interior/Ziad-El-Haje/KITCHEN/3.webp" },
+              { type: "image", src: "/Interior/Ziad-El-Haje/KITCHEN/4.webp" },
+              { type: "image", src: "/Interior/Ziad-El-Haje/KITCHEN/5.webp" },
+              { type: "image", src: "/Interior/Ziad-El-Haje/KITCHEN/6.webp" },
+            ],
+          },
+          {
+            folder: "Gym",
+            items: [
+              { type: "image", src: "/Interior/Ziad-El-Haje/GYM/1.webp" },
+              { type: "image", src: "/Interior/Ziad-El-Haje/GYM/2.webp" },
+              { type: "image", src: "/Interior/Ziad-El-Haje/GYM/3.webp" },
+              { type: "image", src: "/Interior/Ziad-El-Haje/GYM/4.webp" },
+              { type: "image", src: "/Interior/Ziad-El-Haje/GYM/5.webp" },
+              { type: "image", src: "/Interior/Ziad-El-Haje/GYM/6.webp" },
+            ],
+          },
+          {
+            folder: "LAUNDRY",
+            items: [
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/LAUNDRY ROOM/1.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/LAUNDRY ROOM/2.webp",
+              },
+            ],
+          },
+          {
+            folder: "HALL ROOf",
+            items: [
+              { type: "image", src: "/Interior/Ziad-El-Haje/HALL ROOF/1.webp" },
+              // { type: "image", src: "/Interior/Ziad-El-Haje/HALL ROOF/2.webp" },
+              { type: "image", src: "/Interior/Ziad-El-Haje/HALL ROOF/3.webp" },
+              { type: "image", src: "/Interior/Ziad-El-Haje/HALL ROOF/4.webp" },
+              { type: "image", src: "/Interior/Ziad-El-Haje/HALL ROOF/5.webp" },
+              { type: "image", src: "/Interior/Ziad-El-Haje/HALL ROOF/6.webp" },
+            ],
+          },
+          {
+            folder: "MAJLIS & WC",
+            items: [
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MAJLIS &WC/2.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MAJLIS &WC/3.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MAJLIS &WC/4.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MAJLIS &WC/5.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MAJLIS &WC/6.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MAJLIS &WC/7.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MAJLIS &WC/8.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MAJLIS &WC/9.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MAJLIS &WC/10.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/MAJLIS &WC/11.webp",
+              },
+            ],
+          },
+          {
+            folder: "WOMEN MAJLIS",
+            items: [
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/WOMEN MAJLIS/1.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/WOMEN MAJLIS/2.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/WOMEN MAJLIS/3.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/WOMEN MAJLIS/4.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/WOMEN MAJLIS/5.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/WOMEN MAJLIS/6.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/WOMEN MAJLIS/7.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/WOMEN MAJLIS/8.webp",
+              },
+              {
+                type: "image",
+                src: "/Interior/Ziad-El-Haje/WOMEN MAJLIS/9.webp",
+              },
+            ],
+          },
+        ],
+      },
     ],
   },
 
