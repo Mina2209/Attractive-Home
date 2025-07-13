@@ -55,6 +55,9 @@ const Portfolio = () => {
   useEffect(() => {
     if (categoryId && projectsRef.current) {
       projectsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+      setTimeout(() => {
+        window.scrollBy({ top: 0, left: 0, behavior: "smooth" });
+      }, 400); 
     }
   }, [categoryId]);
 
