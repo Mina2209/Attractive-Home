@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import portfolioData from "../data/portfolioData";
 import { Link, useParams } from "react-router-dom";
 import VideoPlayer from "./VideoPlayer";
@@ -45,10 +45,18 @@ const ProjectCard = ({ category, project }) => (
 const Portfolio = () => {
   const { categoryId } = useParams();
   const videoRefs = useRef({});
+  const projectsRef = useRef(null); // Add ref for projects section
 
   // Use categoryId from URL params or null if not specified
   const activeTab = categoryId || null;
   const activeCategory = categoryId ? portfolioData[categoryId] : null;
+
+  // Smooth scroll to projects when category changes
+  useEffect(() => {
+    if (categoryId && projectsRef.current) {
+      projectsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [categoryId]);
 
   if (categoryId && !portfolioData[categoryId]) {
     return (
@@ -107,16 +115,14 @@ const Portfolio = () => {
 
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div
-        className="absolute right-0 opacity-70 bottom-3/4 transform -translate-y-3/4 px-3 [@media(max-height:750px)]:bottom-2/3 [@media(max-height:750px)]:-translate-y-2/3
-          [@media(max-height:750px)]:bottom-[60%] 
-          [@media(max-height:750px)]:-translate-y-[60%]"
+        className="absolute right-0 opacity-70 top-[40%] px-3"
       >
         <span className="absolute top-[-20px] left-0 bg-gray-800 text-white text-xs font-semibold py-1 px-3 rounded-full">
           Pioneer
         </span>
         <Link
           to="/portfolio/aluminum-skirting"
-          className="bg-white text-gray-900 text-xl font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-gray-200 transition-all duration-300"
+          className="bg-white text-gray-900 font-bold rounded-md shadow-lg transition-all duration-300 px-3 py-2 text-sm sm:text-xl sm:py-3 sm:px-6 sm:rounded-lg hover:bg-gray-200"
         >
           Explore Aluminum Skirting
         </Link>
@@ -133,19 +139,19 @@ const Portfolio = () => {
           ) : (
             <>
               <h2
-                className="text-4xl font-bold mb-5 px-6"
+                className="text-4xl font-bold mb-5 px-6 hidden sm:block"
                 style={{ letterSpacing: "2.4px" }}
               >
                 {activeCategory.title}
               </h2>
               <p
-                className="text-lg leading-8 px-6"
+                className="text-lg leading-8 px-6 hidden sm:block"
                 style={{ letterSpacing: "0.6px" }}
               >
                 {activeCategory.description}
               </p>
               <p
-                className="text-lg mt-4 mb-6 font-semibold px-6"
+                className="text-lg mt-4 mb-6 font-semibold px-6 hidden sm:block"
                 style={{ letterSpacing: "0.72px" }}
               >
                 More than 140 objects ranging from 120 to 8000 m²
@@ -166,7 +172,10 @@ const Portfolio = () => {
         </div>
       </div>
 
-      <div className="max-w-5xl mx-auto grid gap-24 md:grid-cols-2">
+      <div
+        ref={projectsRef}
+        className="max-w-5xl mx-auto grid gap-24 md:grid-cols-2"
+      >
         {(activeTab === null ? Object.keys(portfolioData) : [activeTab]).map(
           (category) =>
             portfolioData[category].projects.map((project, projectIndex) => (
