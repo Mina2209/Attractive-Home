@@ -1,0 +1,192 @@
+{
+  "id": "project-10",
+  "title": "Mr. Nabras's Villa",
+  "category": "interior",
+  "area": "500 m²",
+  "description": "Interior design",
+  "cover": "/Interior/Nabras/Cover/master.m3u8",
+  "media": [
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/1.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/2.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/3.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/4.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/5.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/6.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/7.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/8.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/9.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/10.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/11.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/12.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/13.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/14.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/15.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/16.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/17.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/18.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/19.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/20.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/21.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/22.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/23.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/24.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/25.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/26.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/27.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/28.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/29.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/30.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/31.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/32.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/33.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/34.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/35.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/36.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/37.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/38.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/39.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/40.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/41.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/42.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/43.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/44.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Nabras/45.webp"
+    }
+  ],
+  "createdAt": "2026-01-27T16:42:56.349Z",
+  "updatedAt": "2026-01-27T16:42:56.349Z"
+}

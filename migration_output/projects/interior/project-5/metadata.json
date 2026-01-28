@@ -1,0 +1,160 @@
+{
+  "id": "project-5",
+  "title": "Mr. Wahed's Villa",
+  "category": "interior",
+  "area": "500 m²",
+  "description": "Interior design",
+  "cover": "/Interior/Wahed/Cover/master.m3u8",
+  "media": [
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/1.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/2.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/3.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/4.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/5.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/6.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/7.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/8.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/9.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/10.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/11.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/12.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/13.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/14.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/15.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/16.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/17.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/18.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/19.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/20.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/21.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/22.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/23.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/24.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/25.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/26.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/27.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/28.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/29.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/30.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/31.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/32.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/33.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/34.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/35.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/36.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Wahed/37.webp"
+    }
+  ],
+  "createdAt": "2026-01-27T16:42:56.345Z",
+  "updatedAt": "2026-01-27T16:42:56.345Z"
+}

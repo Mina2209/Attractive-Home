@@ -1,0 +1,456 @@
+{
+  "id": "project-9",
+  "title": "Mr. Khaled's Villa",
+  "category": "interior",
+  "area": "500 m²",
+  "description": "Interior design",
+  "cover": "/Interior/Khaled/Cover/master.m3u8",
+  "media": [
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/1.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/2.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/3.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/4.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/5.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/6.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/7.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/8.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/9.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/10.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/11.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/12.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/13.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/14.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/15.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/16.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/17.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/18.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/19.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/20.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/21.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/22.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/23.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/24.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/25.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/26.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/27.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/28.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/29.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/30.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/31.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/32.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/33.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/34.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/35.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/36.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/37.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/38.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/39.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/40.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/41.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/42.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/43.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/44.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/45.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/46.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/47.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/48.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/49.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/50.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/51.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/52.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/53.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/54.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/55.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/56.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/57.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/58.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/59.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/60.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/61.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/62.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/63.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/64.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/65.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/66.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/67.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/68.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/69.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/70.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/71.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/72.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/73.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/74.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/75.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/76.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/77.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/78.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/79.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/80.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/81.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/82.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/83.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/84.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/85.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/86.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/87.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/88.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/89.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/90.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/91.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/92.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/93.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/94.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/95.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/96.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/97.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/98.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/99.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/100.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/101.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/102.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/103.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/104.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/105.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/106.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/107.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/108.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/109.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/110.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Khaled/111.webp"
+    }
+  ],
+  "createdAt": "2026-01-27T16:42:56.348Z",
+  "updatedAt": "2026-01-27T16:42:56.348Z"
+}

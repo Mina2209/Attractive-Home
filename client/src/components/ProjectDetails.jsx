@@ -1,15 +1,84 @@
-import { useParams } from "react-router-dom";
-import portfolioData from "../data/portfolioData";
-import VideoPlayer from "./VideoPlayer";
-import { Link } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import VideoPlayer from "./VideoPlayer";
+import { fetchProjectMetadata } from "../services/portfolioService";
+// Fallback to static data during migration
+import staticPortfolioData from "../data/portfolioData";
 
 const ProjectDetails = () => {
   const { categoryId, projectId } = useParams();
-  const category = portfolioData[categoryId];
-  const project = category.projects.find((proj) => proj.id === projectId);
 
-  if (!project)
+  const [project, setProject] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  // State to track collapsed/expanded folders
+  const [collapsed, setCollapsed] = useState({});
+
+  // Load project data
+  useEffect(() => {
+    const loadProject = async () => {
+      setLoading(true);
+      try {
+        // Try fetching from S3/API first
+        const metadata = await fetchProjectMetadata(categoryId, projectId);
+        if (metadata) {
+          setProject({
+            id: metadata.id,
+            title: metadata.title,
+            area: metadata.area,
+            description: metadata.description,
+            video: metadata.cover,
+            details: metadata.media || []
+          });
+        }
+      } catch (err) {
+        console.error("Failed to load from API, using static data:", err);
+        // Fallback to static data
+        const staticCategory = staticPortfolioData[categoryId];
+        if (staticCategory) {
+          const staticProject = staticCategory.projects.find((proj) => proj.id === projectId);
+          setProject(staticProject);
+        }
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadProject();
+  }, [categoryId, projectId]);
+
+  // Initialize collapsed state when project loads
+  useEffect(() => {
+    if (project?.details) {
+      const isGrouped = Array.isArray(project.details) &&
+        project.details.length > 0 &&
+        project.details[0].folder;
+
+      if (isGrouped) {
+        const initialCollapsed = {};
+        project.details.forEach(group => {
+          initialCollapsed[group.folder] = true;
+        });
+        setCollapsed(initialCollapsed);
+      }
+    }
+  }, [project]);
+
+  const toggleCollapse = (folder) => {
+    setCollapsed((prev) => ({ ...prev, [folder]: !prev[folder] }));
+  };
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center h-screen bg-[#1f1f1f]">
+        <div className="text-white text-xl">Loading project...</div>
+      </div>
+    );
+  }
+
+  if (!project) {
     return (
       <div className="flex flex-col items-center justify-center h-screen text-center bg-[#1f1f1f] px-6">
         <div className="flex flex-col">
@@ -32,32 +101,17 @@ const ProjectDetails = () => {
             Back to Portfolio
           </Link>
           <h1 className="text-3xl sm:text-5xl font-bold mt-4 text-white">
-            Project data not found!
+            Project not found!
           </h1>
         </div>
       </div>
     );
+  }
 
   // Check if details are grouped by folder
-  const isGrouped = Array.isArray(project.details) && project.details.length > 0 && project.details[0].folder;
-
-  // State to track collapsed/expanded folders
-  const [collapsed, setCollapsed] = useState({});
-
-  // On mount or when project.details changes, set all folders to collapsed
-  useEffect(() => {
-    if (isGrouped) {
-      const initialCollapsed = {};
-      project.details.forEach(group => {
-        initialCollapsed[group.folder] = true;
-      });
-      setCollapsed(initialCollapsed);
-    }
-  }, [project.details, isGrouped]);
-
-  const toggleCollapse = (folder) => {
-    setCollapsed((prev) => ({ ...prev, [folder]: !prev[folder] }));
-  };
+  const isGrouped = Array.isArray(project.details) &&
+    project.details.length > 0 &&
+    project.details[0].folder;
 
   return (
     <section className="flex flex-col bg-black text-white">
@@ -106,7 +160,7 @@ const ProjectDetails = () => {
             </div>
           ))
         ) : (
-          // fallback for old structure
+          // Standard structure (flat list of media items)
           <div className="space-y-4">
             <div className="grid gap-4 md:grid-cols-2 md:m-4">
               {project.details.map((item, index) =>

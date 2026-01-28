@@ -1,0 +1,40 @@
+{
+  "id": "project-4",
+  "title": "Mr. El Tayeb Villa",
+  "category": "interior",
+  "area": "500 m²",
+  "description": "Interior design",
+  "cover": "/Interior/El-Tayeb/Cover/master.m3u8",
+  "media": [
+    {
+      "type": "video",
+      "src": "/Interior/El-Tayeb/Cover/master.m3u8"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/El-Tayeb/1.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/El-Tayeb/2.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/El-Tayeb/3.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/El-Tayeb/4.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/El-Tayeb/5.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/El-Tayeb/6.webp"
+    }
+  ],
+  "createdAt": "2026-01-27T16:42:56.344Z",
+  "updatedAt": "2026-01-27T16:42:56.344Z"
+}

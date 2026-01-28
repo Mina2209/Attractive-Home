@@ -1,0 +1,232 @@
+{
+  "id": "project-6",
+  "title": "Mr. Mohamed Omar's Villa",
+  "category": "interior",
+  "area": "500 m²",
+  "description": "Interior design",
+  "cover": "/Interior/Mohamed-Omar/Cover/master.m3u8",
+  "media": [
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/1.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/2.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/3.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/4.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/5.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/6.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/7.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/8.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/9.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/10.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/11.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/12.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/13.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/14.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/15.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/16.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/17.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/18.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/19.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/20.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/21.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/22.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/23.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/24.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/25.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/26.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/27.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/28.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/29.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/30.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/31.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/32.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/33.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/34.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/35.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/36.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/37.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/38.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/39.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/40.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/41.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/42.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/43.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/44.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/45.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/46.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/47.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/48.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/49.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/50.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/51.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/52.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/53.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/54.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Mohamed-Omar/55.webp"
+    }
+  ],
+  "createdAt": "2026-01-27T16:42:56.346Z",
+  "updatedAt": "2026-01-27T16:42:56.346Z"
+}

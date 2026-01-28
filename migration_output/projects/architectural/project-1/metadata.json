@@ -1,0 +1,496 @@
+{
+  "id": "project-1",
+  "title": "Mr. Ahmed Baghoum's Villa",
+  "category": "architectural",
+  "area": "750 m²",
+  "description": "Architectural design",
+  "cover": "/Architecture/Baghoum/Cover/master.m3u8",
+  "media": [
+    {
+      "type": "video",
+      "src": "/Architecture/Baghoum/Intro/master.m3u8"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/1.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/2.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/3.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/4.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/5.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/6.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/7.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/8.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/9.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/10.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/11.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/12.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/13.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/14.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/15.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/16.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/17.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/18.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/19.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/20.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/21.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/22.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/23.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/24.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/25.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/26.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/27.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/28.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/29.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/30.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/31.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/32.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/33.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/34.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/35.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/36.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/37.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/38.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/39.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/40.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/41.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/42.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/43.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/44.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/45.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/46.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/47.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/48.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/49.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/50.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/51.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/52.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/53.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/54.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/55.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/56.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/57.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/58.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/59.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/60.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/61.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/62.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/63.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/64.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/65.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/66.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/67.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/68.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/69.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/70.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/71.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/72.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/73.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/74.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/75.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/76.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/77.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/78.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/79.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/80.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/81.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/82.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/83.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/84.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/85.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/86.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/87.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/88.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/89.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/90.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/91.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/92.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/93.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/94.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/95.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/96.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/97.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/98.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/99.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/100.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/101.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/102.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/103.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/104.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/105.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/106.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/107.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/108.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/109.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/110.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/111.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/112.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/113.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/114.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/115.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/116.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/117.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/118.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/119.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Architecture/Baghoum/120.webp"
+    }
+  ],
+  "createdAt": "2026-01-27T16:42:56.341Z",
+  "updatedAt": "2026-01-27T16:42:56.341Z"
+}

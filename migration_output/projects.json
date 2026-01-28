@@ -1,0 +1,95 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-01-27T16:42:56.340Z",
+  "categories": {
+    "architectural": {
+      "title": "Architectural",
+      "description": "Attractive Home changes the idea of what a space for living should look like. Our architecture pushes \n                    the boundaries of the four walls and turns a country residence into a holiday and adventure. \n                    We use landscape, climate, and terrain data 100% and even more to exceed expectations and \n                    make your dreams come true."
+    },
+    "interior": {
+      "title": "Interior",
+      "description": "Crafting stylish and comfortable spaces that reflect our clients' unique tastes and lifestyles. Our focus is on creating environments that are not only visually stunning but also practical and welcoming."
+    },
+    "fit": {
+      "title": "Fit Out",
+      "description": "Delivering tailored and efficient interior solutions for businesses. Our fit-out designs prioritize functionality and aesthetics, ensuring spaces align with productivity needs and brand identity."
+    }
+  },
+  "projects": [
+    {
+      "id": "project-1",
+      "category": "architectural",
+      "path": "projects/architectural/project-1/"
+    },
+    {
+      "id": "project-1",
+      "category": "interior",
+      "path": "projects/interior/project-1/"
+    },
+    {
+      "id": "project-2",
+      "category": "interior",
+      "path": "projects/interior/project-2/"
+    },
+    {
+      "id": "project-3",
+      "category": "interior",
+      "path": "projects/interior/project-3/"
+    },
+    {
+      "id": "project-4",
+      "category": "interior",
+      "path": "projects/interior/project-4/"
+    },
+    {
+      "id": "project-5",
+      "category": "interior",
+      "path": "projects/interior/project-5/"
+    },
+    {
+      "id": "project-6",
+      "category": "interior",
+      "path": "projects/interior/project-6/"
+    },
+    {
+      "id": "project-7",
+      "category": "interior",
+      "path": "projects/interior/project-7/"
+    },
+    {
+      "id": "project-8",
+      "category": "interior",
+      "path": "projects/interior/project-8/"
+    },
+    {
+      "id": "project-9",
+      "category": "interior",
+      "path": "projects/interior/project-9/"
+    },
+    {
+      "id": "project-10",
+      "category": "interior",
+      "path": "projects/interior/project-10/"
+    },
+    {
+      "id": "project-11",
+      "category": "interior",
+      "path": "projects/interior/project-11/"
+    },
+    {
+      "id": "project-12",
+      "category": "interior",
+      "path": "projects/interior/project-12/"
+    },
+    {
+      "id": "project-1",
+      "category": "fit",
+      "path": "projects/fit/project-1/"
+    },
+    {
+      "id": "project-2",
+      "category": "fit",
+      "path": "projects/fit/project-2/"
+    }
+  ]
+}

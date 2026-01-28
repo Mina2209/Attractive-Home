@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-01-27T00:00:00Z",
+  "categories": {
+    "architectural": {
+      "title": "Architectural",
+      "description": "Architectural design projects"
+    },
+    "interior": {
+      "title": "Interior",
+      "description": "Interior design projects"
+    },
+    "fit": {
+      "title": "Fit Out",
+      "description": "Fit out projects"
+    }
+  },
+  "projects": []
+}

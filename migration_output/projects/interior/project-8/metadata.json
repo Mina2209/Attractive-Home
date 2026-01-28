@@ -1,0 +1,136 @@
+{
+  "id": "project-8",
+  "title": "Mr. Hussien's Villa",
+  "category": "interior",
+  "area": "500 m²",
+  "description": "Interior design",
+  "cover": "/Interior/Hussien/Cover/master.m3u8",
+  "media": [
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/1.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/2.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/3.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/4.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/5.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/6.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/7.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/8.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/9.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/10.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/11.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/12.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/13.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/14.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/15.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/16.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/17.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/18.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/19.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/20.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/21.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/22.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/23.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/24.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/25.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/26.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/27.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/28.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/29.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/30.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Hussien/31.webp"
+    }
+  ],
+  "createdAt": "2026-01-27T16:42:56.347Z",
+  "updatedAt": "2026-01-27T16:42:56.347Z"
+}

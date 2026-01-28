@@ -1,0 +1,724 @@
+{
+  "id": "project-7",
+  "title": "Mr. Srour's Villa",
+  "category": "interior",
+  "area": "500 m²",
+  "description": "Interior design",
+  "cover": "/Interior/Srour/Cover/master.m3u8",
+  "media": [
+    {
+      "type": "image",
+      "src": "/Interior/Srour/1.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/2.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/3.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/4.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/5.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/6.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/7.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/8.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/9.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/10.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/11.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/12.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/13.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/14.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/15.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/16.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/17.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/18.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/19.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/20.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/21.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/22.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/23.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/24.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/25.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/26.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/27.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/28.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/29.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/30.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/31.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/32.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/33.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/34.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/35.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/36.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/37.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/38.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/39.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/40.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/41.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/42.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/43.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/44.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/45.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/46.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/47.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/48.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/49.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/50.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/51.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/52.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/53.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/54.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/55.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/56.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/57.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/58.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/59.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/60.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/61.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/62.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/63.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/64.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/65.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/66.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/67.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/68.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/69.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/70.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/71.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/72.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/73.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/74.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/75.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/76.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/77.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/78.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/79.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/80.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/81.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/82.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/83.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/84.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/85.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/86.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/87.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/88.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/89.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/90.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/91.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/92.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/93.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/94.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/95.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/96.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/97.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/98.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/99.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/100.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/101.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/102.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/103.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/104.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/105.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/106.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/107.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/108.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/109.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/110.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/111.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/112.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/113.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/114.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/115.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/116.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/117.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/118.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/119.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/120.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/121.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/122.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/123.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/124.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/125.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/126.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/127.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/128.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/129.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/130.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/131.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/132.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/133.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/134.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/135.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/136.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/137.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/138.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/139.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/140.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/141.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/142.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/143.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/144.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/145.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/146.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/147.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/148.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/149.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/150.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/151.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/152.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/153.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/154.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/155.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/156.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/157.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/158.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/159.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/160.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/161.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/162.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/163.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/164.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/165.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/166.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/167.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/168.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/169.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/170.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/171.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/172.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/173.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/174.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/175.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/176.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/177.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Srour/178.webp"
+    }
+  ],
+  "createdAt": "2026-01-27T16:42:56.347Z",
+  "updatedAt": "2026-01-27T16:42:56.347Z"
+}

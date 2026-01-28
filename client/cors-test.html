@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>S3 CORS Test</title>
+</head>
+<body>
+    <h1>S3 CORS Upload Test</h1>
+    <input type="file" id="fileInput">
+    <button onclick="testUpload()">Test Upload</button>
+    <div id="status"></div>
+
+    <script>
+        // Replace with YOUR presigned URL
+        const PRESIGNED_URL = 'PASTE_YOUR_PRESIGNED_URL_HERE';
+        
+        function testUpload() {
+            const file = document.getElementById('fileInput').files[0];
+            if (!file) {
+                alert('Please select a file');
+                return;
+            }
+
+            const xhr = new XMLHttpRequest();
+            
+            xhr.upload.onprogress = (e) => {
+                if (e.lengthComputable) {
+                    const percent = Math.round((e.loaded / e.total) * 100);
+                    document.getElementById('status').textContent = `Uploading: ${percent}%`;
+                }
+            };
+            
+            xhr.onload = () => {
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    document.getElementById('status').textContent = 'Success!✅';
+                    document.getElementById('status').style.color = 'green';
+                } else {
+                    document.getElementById('status').textContent = `Failed: ${xhr.status} ${xhr.statusText}`;
+                    document.getElementById('status').style.color = 'red';
+                }
+            };
+            
+            xhr.onerror = () => {
+                document.getElementById('status').textContent = 'Network error (check console for CORS details)';
+                document.getElementById('status').style.color = 'red';
+            };
+            
+            xhr.open('PUT', PRESIGNED_URL);
+            // NO Content-Type header!
+            xhr.send(file);
+        }
+    </script>
+</body>
+</html>

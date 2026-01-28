@@ -1,0 +1,20 @@
+{
+  "id": "project-2",
+  "title": "Mr. Hamad's Villa",
+  "category": "fit",
+  "area": "500 m²",
+  "description": "Fit-Out",
+  "cover": "/Fit/Hamad/Cover/master.m3u8",
+  "media": [
+    {
+      "type": "video",
+      "src": "/Fit/Hamad/1/master.m3u8"
+    },
+    {
+      "type": "video",
+      "src": "/Fit/Hamad/2/master.m3u8"
+    }
+  ],
+  "createdAt": "2026-01-27T16:42:56.352Z",
+  "updatedAt": "2026-01-27T16:42:56.352Z"
+}

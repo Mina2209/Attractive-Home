@@ -1,0 +1,328 @@
+{
+  "id": "project-3",
+  "title": "Mr. Salem's Villa",
+  "category": "interior",
+  "area": "500 m²",
+  "description": "Interior design",
+  "cover": "/Interior/Salem/Cover/master.m3u8",
+  "media": [
+    {
+      "type": "image",
+      "src": "/Interior/Salem/1.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/2.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/3.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/4.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/5.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/6.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/7.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/8.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/9.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/10.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/11.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/12.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/13.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/14.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/15.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/16.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/17.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/18.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/19.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/20.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/21.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/22.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/23.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/24.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/25.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/26.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/27.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/28.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/29.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/30.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/31.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/32.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/33.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/34.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/35.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/36.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/37.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/38.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/39.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/40.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/41.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/42.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/43.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/44.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/45.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/46.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/47.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/48.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/49.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/50.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/51.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/52.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/53.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/54.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/55.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/56.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/57.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/58.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/59.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/60.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/61.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/62.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/63.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/64.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/65.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/66.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/67.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/68.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/69.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/70.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/71.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/72.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/73.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/74.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/75.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/76.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/77.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/78.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Salem/79.webp"
+    }
+  ],
+  "createdAt": "2026-01-27T16:42:56.343Z",
+  "updatedAt": "2026-01-27T16:42:56.343Z"
+}

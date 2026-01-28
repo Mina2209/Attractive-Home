@@ -1,0 +1,216 @@
+{
+  "id": "project-2",
+  "title": "Minister Rashed's Villa",
+  "category": "interior",
+  "area": "500 m²",
+  "description": "Interior design",
+  "cover": "/Interior/Minister-Rashed/Cover/master.m3u8",
+  "media": [
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/1.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/2.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/3.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/4.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/5.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/6.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/7.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/8.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/9.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/10.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/11.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/12.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/13.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/14.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/15.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/16.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/17.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/18.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/19.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/20.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/21.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/22.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/23.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/24.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/25.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/26.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/27.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/28.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/29.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/30.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/31.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/32.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/33.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/34.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/35.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/36.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/37.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/38.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/39.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/40.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/41.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/42.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/43.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/44.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/45.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/46.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/47.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/48.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/49.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/50.webp"
+    },
+    {
+      "type": "image",
+      "src": "/Interior/Minister-Rashed/51.webp"
+    }
+  ],
+  "createdAt": "2026-01-27T16:42:56.343Z",
+  "updatedAt": "2026-01-27T16:42:56.343Z"
+}

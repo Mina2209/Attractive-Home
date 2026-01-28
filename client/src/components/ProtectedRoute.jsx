@@ -13,8 +13,8 @@ const ProtectedRoute = ({ children }) => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  // Simple password protection - In production, use proper authentication!
-  const DASHBOARD_PASSWORD = "admin123"; // Change this!
+  // Simple password protection - Password stored in environment variables
+  const DASHBOARD_PASSWORD = import.meta.env.VITE_DASHBOARD_PASSWORD || "admin123";
 
   useEffect(() => {
     // Check if user is already authenticated

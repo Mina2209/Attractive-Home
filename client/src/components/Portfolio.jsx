@@ -1,7 +1,9 @@
-import { useRef, useEffect } from "react";
-import portfolioData from "../data/portfolioData";
+import { useRef, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import VideoPlayer from "./VideoPlayer";
+import { fetchPortfolioData } from "../services/portfolioService";
+// Fallback to static data during migration
+import staticPortfolioData from "../data/portfolioData";
 
 const PortfolioCategory = ({ category, activeTab, portfolioData }) => {
   const isActive = activeTab === category;
@@ -9,9 +11,8 @@ const PortfolioCategory = ({ category, activeTab, portfolioData }) => {
   return (
     <Link
       to={`/portfolio/${category}`}
-      className={`pb-2 text-xl font-semibold text-center ${
-        isActive ? "border-b-2 border-gray-50" : "border-b text-white"
-      } transition-colors duration-200 uppercase`}
+      className={`pb-2 text-xl font-semibold text-center ${isActive ? "border-b-2 border-gray-50" : "border-b text-white"
+        } transition-colors duration-200 uppercase`}
       aria-label={`View projects for ${portfolioData[category].title}`}
     >
       {portfolioData[category].title}
@@ -45,7 +46,40 @@ const ProjectCard = ({ category, project }) => (
 const Portfolio = () => {
   const { categoryId } = useParams();
   const videoRefs = useRef({});
-  const projectsRef = useRef(null); // Add ref for projects section
+  const projectsRef = useRef(null);
+
+  // Dynamic portfolio data state
+  const [portfolioData, setPortfolioData] = useState(staticPortfolioData);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  // Fetch dynamic data on mount
+  useEffect(() => {
+    const loadData = async () => {
+      try {
+        setLoading(true);
+        const data = await fetchPortfolioData();
+        // Only use dynamic data if it has projects
+        if (data && Object.keys(data).length > 0) {
+          // Check if any category has projects
+          const hasProjects = Object.values(data).some(
+            cat => cat.projects && cat.projects.length > 0
+          );
+          if (hasProjects) {
+            setPortfolioData(data);
+          }
+        }
+      } catch (err) {
+        console.error("Failed to load dynamic portfolio data:", err);
+        // Fallback to static data already set
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadData();
+  }, []);
 
   // Use categoryId from URL params or null if not specified
   const activeTab = categoryId || null;
@@ -57,7 +91,7 @@ const Portfolio = () => {
       projectsRef.current.scrollIntoView({ behavior: "smooth", block: "start" });
       setTimeout(() => {
         window.scrollBy({ top: 0, left: 0, behavior: "smooth" });
-      }, 400); 
+      }, 400);
     }
   }, [categoryId]);
 
