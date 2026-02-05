@@ -354,7 +354,7 @@ function Dashboard() {
   // Loading state
   if (loading && projects.length === 0) {
     return (
-      <div className="min-h-screen bg-[#1f1f1f] py-36 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+      <div className="min-h-screen bg-[#1f1f1f] pt-36 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
         <div className="flex flex-col items-center gap-4">
           <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
           <p className="text-white text-lg">Loading projects...</p>
@@ -364,7 +364,7 @@ function Dashboard() {
   }
 
   return (
-    <div className="min-h-screen bg-[#1f1f1f] py-28 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-[#1f1f1f] pt-36 pb-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
