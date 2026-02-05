@@ -220,6 +220,14 @@ function Dashboard() {
 
       setUploadProgress("Saving project...");
 
+      // Build the media array for existing items that remain (items with no file but have a preview URL)
+      const remainingMedia = currentProject.mediaItems
+        .filter(item => !item.file && item.preview && (item.preview.startsWith('http') || item.preview.startsWith('projects/')))
+        .map(item => ({
+          type: item.type,
+          src: item.preview
+        }));
+
       const projectData = {
         id: projectId,
         category: currentProject.category,
@@ -228,6 +236,8 @@ function Dashboard() {
         description: currentProject.description,
         mediaCount: currentProject.mediaItems.filter(m => m.file).length,
         hasCover: !!currentProject.coverVideo,
+        // Include remaining media for updates - new uploads will be added by process_upload Lambda
+        media: isEditing ? remainingMedia : undefined,
       };
 
       if (isEditing) {
