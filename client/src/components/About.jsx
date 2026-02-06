@@ -4,7 +4,7 @@ const About = () => {
   const videoUrl = "/Main/About/master.m3u8";
 
   return (
-    <section className="text-white relative">
+    <section className="text-[#F5E6D3] relative">
       <VideoPlayer
         videoUrl={videoUrl}
         className="absolute inset-0 w-full h-full object-cover"
@@ -17,7 +17,7 @@ const About = () => {
           <div className="relative z-1 mb-16 grid grid-cols-1 mt-auto">
             <div className="space-y-6  2xl:space-y-10">
               <h2
-                className="text-4xl sm:text-5xl font-bold"
+                className="text-4xl sm:text-5xl font-bold text-[#F5E6D3]"
                 style={{ letterSpacing: "0.02em" }}
               >
                 About Us

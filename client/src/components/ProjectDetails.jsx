@@ -72,15 +72,15 @@ const ProjectDetails = () => {
 
   if (loading) {
     return (
-      <div className="flex items-center justify-center h-screen bg-[#1f1f1f]">
-        <div className="text-white text-xl">Loading project...</div>
+      <div className="flex items-center justify-center h-screen bg-[#0d2637]">
+        <div className="text-[#F5E6D3] text-xl">Loading project...</div>
       </div>
     );
   }
 
   if (!project) {
     return (
-      <div className="flex flex-col items-center justify-center h-screen text-center bg-[#1f1f1f] px-6">
+      <div className="flex flex-col items-center justify-center h-screen text-center bg-[#0d2637] px-6">
         <div className="flex flex-col">
           <Link
             to="/portfolio"
@@ -100,7 +100,7 @@ const ProjectDetails = () => {
             </svg>
             Back to Portfolio
           </Link>
-          <h1 className="text-3xl sm:text-5xl font-bold mt-4 text-white">
+          <h1 className="text-3xl sm:text-5xl font-bold mt-4 text-[#F5E6D3]">
             Project not found!
           </h1>
         </div>
@@ -114,8 +114,8 @@ const ProjectDetails = () => {
     project.details[0].folder;
 
   return (
-    <section className="flex flex-col bg-black text-white">
-      <div className="h-40 bg-[#1f1f1f]"></div>
+    <section className="flex flex-col bg-[#0d2637] text-[#F5E6D3]">
+      <div className="h-40 bg-[#0d2637]"></div>
       <h1 className="text-4xl font-bold mb-10 mt-10 text-center px-4">
         {project.title}
       </h1>

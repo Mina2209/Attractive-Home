@@ -37,17 +37,17 @@ const Contacts = () => {
 
   return (
     <section className="min-h-screen flex flex-col">
-      <div className="h-40 bg-[#1f1f1f]"></div>
+      <div className="h-40 bg-[#0d2637]"></div>
 
-      <div className="bg-[#181818] text-white flex-grow flex items-center justify-center">
-        <div className="max-w-4xl w-full bg-[#181818] rounded-lg flex flex-col md:flex-row overflow-hidden shadow-lg">
+      <div className="bg-[#0d2637] text-[#F5E6D3] flex-grow flex items-center justify-center">
+        <div className="max-w-4xl w-full bg-[#0d2637] rounded-lg flex flex-col md:flex-row overflow-hidden shadow-lg">
           {/* Left Section */}
           <div className="w-full md:w-1/2 px-8 py-12">
-            <h1 className="text-3xl font-bold mb-4">
+            <h1 className="text-3xl font-bold mb-4 text-[#F5E6D3]">
               WE WILL CALL YOU BACK, ANSWER YOUR QUESTIONS AND FIND THE SOLUTION
               FOR ANY TASK YOU HAVE
             </h1>
-            <p className="mb-6 text-gray-400">
+            <p className="mb-6 text-[#E6C9A8]">
               Discussion of the project does not oblige you to anything: we will
               tell you about ourselves and options for implementing your ideas,
               and you will decide on cooperation.
@@ -61,7 +61,7 @@ const Contacts = () => {
                   type="text"
                   id="name"
                   placeholder="Your Name"
-                  className="w-full mt-1 px-4 py-2 bg-gray-800 text-white rounded-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full mt-1 px-4 py-2 bg-[#143344] text-[#F5E6D3] rounded-lg border border-[#5A2E0D] focus:outline-none focus:ring-2 focus:ring-[#C4864A]"
                 />
               </div>
               <div>
@@ -76,20 +76,20 @@ const Contacts = () => {
                     type="text"
                     value={countryCode}
                     onChange={handleCountryCodeChange}
-                    className="bg-gray-800 text-white px-4 py-2 rounded-l-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="bg-[#143344] text-[#F5E6D3] px-4 py-2 rounded-l-lg border border-[#5A2E0D] focus:outline-none focus:ring-2 focus:ring-[#C4864A]"
                     style={{ width: "5rem" }}
                   />
                   <input
                     type="text"
                     id="phone"
                     placeholder="Your Phone Number"
-                    className="w-full px-4 py-2 bg-gray-800 text-white rounded-r-lg border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-4 py-2 bg-[#143344] text-[#F5E6D3] rounded-r-lg border border-[#5A2E0D] focus:outline-none focus:ring-2 focus:ring-[#C4864A]"
                   />
                 </div>
               </div>
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full bg-[#8B4513] text-white py-2 rounded-lg hover:bg-[#723A10] focus:outline-none focus:ring-2 focus:ring-[#C4864A]"
               >
                 SEND
               </button>
@@ -97,7 +97,7 @@ const Contacts = () => {
             {/* <div className="h-32"></div> */}
           </div>
           {/* Right Section */}
-          <div className="w-full md:w-1/2 bg-gray-900 text-gray-400 px-8 py-12 flex flex-col space-y-6 justify-between">
+          <div className="w-full md:w-1/2 bg-[#091a26] text-[#E6C9A8] px-8 py-12 flex flex-col space-y-6 justify-between">
             <div>
               <h2 className="text-xl font-semibold">Contact Information</h2>
               <p>ORDER A PROJECT</p>

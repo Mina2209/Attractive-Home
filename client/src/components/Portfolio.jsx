@@ -97,7 +97,7 @@ const Portfolio = () => {
 
   if (categoryId && !portfolioData[categoryId]) {
     return (
-      <div className="flex flex-col items-center justify-center h-screen text-center bg-[#1f1f1f] px-6">
+      <div className="flex flex-col items-center justify-center h-screen text-center bg-[#0d2637] px-6">
         <div className="flex flex-col">
           <Link
             to="/portfolio"
@@ -117,7 +117,7 @@ const Portfolio = () => {
             </svg>
             Back to Portfolio
           </Link>
-          <h1 className="text-3xl sm:text-5xl font-bold mt-4 text-white">
+          <h1 className="text-3xl sm:text-5xl font-bold mt-4 text-[#F5E6D3]">
             Category not found!
           </h1>
         </div>
@@ -143,7 +143,7 @@ const Portfolio = () => {
   const videoUrl = "/Main/Portfolio/master.m3u8";
 
   return (
-    <section className="py-20 md:px-12 lg:px-24 bg-[#1f1f1f] text-white">
+    <section className="py-20 md:px-12 lg:px-24 bg-[#0d2637] text-[#F5E6D3]">
       <VideoPlayer
         videoUrl={videoUrl}
         showMuteButton={false}
@@ -227,8 +227,8 @@ const Portfolio = () => {
               />
             ))
         )}
-        <div className="relative group overflow-hidden sm:rounded-lg sm:shadow-lg bg-gray-800 p-6 flex flex-col items-center justify-center">
-          <h3 className="text-xl font-bold text-white mb-4">
+        <div className="relative group overflow-hidden sm:rounded-lg sm:shadow-lg bg-[#143344] p-6 flex flex-col items-center justify-center">
+          <h3 className="text-xl font-bold text-[#F5E6D3] mb-4">
             Aluminum Skirting Profiles
           </h3>
           <Link

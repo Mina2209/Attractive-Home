@@ -43,7 +43,7 @@ const ProtectedRoute = ({ children }) => {
 
   if (!isAuthenticated) {
     return (
-      <div className="min-h-screen bg-[#1f1f1f] from-blue-50 to-indigo-100 flex items-center justify-center px-4 py-36">
+      <div className="min-h-screen bg-[#0d2637] from-blue-50 to-indigo-100 flex items-center justify-center px-4 py-36">
         <div className="max-w-md w-full">
           <div className="bg-white rounded-2xl shadow-xl p-8">
             <div className="text-center mb-8">

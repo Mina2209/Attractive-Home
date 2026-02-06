@@ -5,7 +5,7 @@ const Services = () => {
   const videoUrl = "/Main/Services/master.m3u8";
 
   return (
-    <section className="bg-[#1f1f1f]">
+    <section className="bg-[#0d2637]">
       <VideoPlayer
         videoUrl={videoUrl}
         className="absolute inset-0 w-full h-full object-cover"
@@ -30,7 +30,7 @@ const Services = () => {
           {servicesData.map((service, index) => (
             <div
               key={index}
-              className="bg-[#2b2b2b] rounded-lg shadow-lg overflow-hidden transition-transform duration-1000 hover:scale-105"
+              className="bg-[#143344] rounded-lg shadow-lg overflow-hidden transition-transform duration-1000 hover:scale-105"
             >
               {service.image ? (
                 <img
@@ -48,10 +48,10 @@ const Services = () => {
                 />
               ) : null}
               <div className="p-6">
-                <h2 className="text-2xl font-semibold mb-2 text-white">
+                <h2 className="text-2xl font-semibold mb-2 text-[#F5E6D3]">
                   {service.title}
                 </h2>
-                <p className="text-gray-400">{service.description}</p>
+                <p className="text-[#E6C9A8]">{service.description}</p>
               </div>
             </div>
           ))}

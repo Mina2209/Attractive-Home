@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
@@ -6,12 +6,12 @@ const Navbar = () => {
   const location = useLocation();
 
   const isActive = (path) => {
-    return location.pathname === path ? "text-gray-300" : "text-white";
+    return location.pathname === path ? "text-[#E6C9A8]" : "text-[#F5E6D3]";
   };
 
   return (
     <nav
-      className="fixed top-0 w-full flex justify-between items-center px-4 sm:px-6 lg:px-10 py-5 z-20 text-white
+      className="fixed top-0 w-full flex justify-between items-center px-4 sm:px-6 lg:px-10 py-5 z-20 text-[#F5E6D3]
       transition-all duration-300 bg-transparent"
       style={{ backdropFilter: "blur(6px)" }}
     >
@@ -20,7 +20,7 @@ const Navbar = () => {
       </Link>
 
       {/* Desktop Link */}
-      <div className="hidden md:flex space-x-14 text-white">
+      <div className="hidden md:flex space-x-14 text-[#F5E6D3]">
         <Link
           to="/about"
           className={`hover:text-gray-300 ${isActive("/about")}`}
@@ -49,7 +49,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Button */}
       <button
-        className="md:hidden text-white focus:outline-none"
+        className="md:hidden text-[#F5E6D3] focus:outline-none"
         onClick={() => setMenuOpen(!menuOpen)}
       >
         <svg
@@ -70,7 +70,7 @@ const Navbar = () => {
 
       {/* Mobile Links */}
       {menuOpen && (
-        <div className="absolute top-full left-0 w-full bg-gray-900 bg-opacity-90 flex flex-col items-center space-y-5 py-5 md:hidden">
+        <div className="absolute top-full left-0 w-full bg-[#0d2637] bg-opacity-90 flex flex-col items-center space-y-5 py-5 md:hidden">
           <Link
             to="/about"
             className={`hover:text-gray-300 ${isActive("/about")}`}

@@ -14,7 +14,7 @@ import VideoPlayer from "./VideoPlayer";
 const Footer = () => {
   const location = useLocation();
   const isActive = (path) => {
-    return location.pathname === path ? "text-gray-300" : "text-white";
+    return location.pathname === path ? "text-[#E6C9A8]" : "text-[#F5E6D3]";
   };
 
   const isContactPage = location.pathname === "/contacts";
@@ -124,7 +124,7 @@ const Footer = () => {
   }
 
   return (
-    <footer className="relative text-white py-32 overflow-hidden bg-[#181818]">
+    <footer className="relative text-[#F5E6D3] py-32 overflow-hidden bg-[#0d2637]">
       {isContactPage && (
         <VideoPlayer
           videoUrl={videoUrl}

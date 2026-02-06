@@ -354,31 +354,31 @@ function Dashboard() {
   // Loading state
   if (loading && projects.length === 0) {
     return (
-      <div className="min-h-screen bg-[#1f1f1f] pt-36 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
+      <div className="min-h-screen bg-[#0d2637] pt-36 px-4 sm:px-6 lg:px-8 flex items-center justify-center">
         <div className="flex flex-col items-center gap-4">
-          <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
-          <p className="text-white text-lg">Loading projects...</p>
+          <div className="w-12 h-12 border-4 border-[#C4864A] border-t-transparent rounded-full animate-spin"></div>
+          <p className="text-[#F5E6D3] text-lg">Loading projects...</p>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-[#1f1f1f] pt-36 pb-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-[#0d2637] pt-36 pb-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-8">
           <div>
-            <h1 className="text-3xl sm:text-4xl font-bold text-white tracking-wide">
+            <h1 className="text-3xl sm:text-4xl font-bold text-[#F5E6D3] tracking-wide">
               PORTFOLIO DASHBOARD
             </h1>
-            <p className="text-gray-400 mt-1">Manage your projects and media</p>
+            <p className="text-[#E6C9A8] mt-1">Manage your projects and media</p>
           </div>
           <button
             onClick={() => setShowForm(!showForm)}
             className={`px-6 py-3 rounded-lg font-semibold transition-all duration-200 flex items-center gap-2 ${showForm
-              ? "bg-gray-700 text-white hover:bg-gray-600"
-              : "bg-blue-600 text-white hover:bg-blue-700 shadow-lg shadow-blue-600/30"
+              ? "bg-[#143344] text-[#F5E6D3] hover:bg-[#091a26]"
+              : "bg-[#8B4513] text-white hover:bg-[#723A10] shadow-lg shadow-[#723A10]/30"
               }`}
           >
             {showForm ? (
@@ -405,27 +405,27 @@ function Dashboard() {
             <div
               onClick={() => setActiveFilter("all")}
               className={`p-4 rounded-xl cursor-pointer transition-all duration-200 ${activeFilter === "all"
-                ? "bg-blue-600 shadow-lg shadow-blue-600/30"
-                : "bg-gray-800/80 hover:bg-gray-700/80"
+                ? "bg-[#8B4513] shadow-lg shadow-[#723A10]/30"
+                : "bg-[#143344] hover:bg-[#091a26]"
                 }`}
             >
-              <p className="text-3xl font-bold text-white">{counts.all}</p>
-              <p className="text-sm text-gray-300 mt-1">All Projects</p>
+              <p className="text-3xl font-bold text-[#F5E6D3]">{counts.all}</p>
+              <p className="text-sm text-[#E6C9A8] mt-1">All Projects</p>
             </div>
             {categories.map((cat) => (
               <div
                 key={cat.value}
                 onClick={() => setActiveFilter(cat.value)}
                 className={`p-4 rounded-xl cursor-pointer transition-all duration-200 ${activeFilter === cat.value
-                  ? "bg-blue-600 shadow-lg shadow-blue-600/30"
-                  : "bg-gray-800/80 hover:bg-gray-700/80"
+                  ? "bg-[#8B4513] shadow-lg shadow-[#723A10]/30"
+                  : "bg-[#143344] hover:bg-[#091a26]"
                   }`}
               >
-                <p className="text-3xl font-bold text-white">
+                <p className="text-3xl font-bold text-[#F5E6D3]">
                   <span className="mr-2">{cat.icon}</span>
                   {counts[cat.value]}
                 </p>
-                <p className="text-sm text-gray-300 mt-1 truncate">{cat.label}</p>
+                <p className="text-sm text-[#E6C9A8] mt-1 truncate">{cat.label}</p>
               </div>
             ))}
           </div>
@@ -436,7 +436,7 @@ function Dashboard() {
           <div className="mb-6">
             <div className="relative">
               <svg
-                className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"
+                className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-[#D4A574]"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -448,7 +448,7 @@ function Dashboard() {
                 placeholder="Search projects..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-12 pr-4 py-3 bg-gray-800/80 text-white placeholder-gray-400 rounded-xl border border-gray-700 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 focus:outline-none transition-all"
+                className="w-full pl-12 pr-4 py-3 bg-[#143344] text-[#F5E6D3] placeholder-[#D4A574] rounded-xl border border-[#5A2E0D] focus:border-[#C4864A] focus:ring-2 focus:ring-[#8B4513]/20 focus:outline-none transition-all"
               />
             </div>
           </div>
@@ -456,14 +456,14 @@ function Dashboard() {
 
         {/* Upload Progress */}
         {isUploading && (
-          <div className="mb-8 bg-gray-800/90 backdrop-blur rounded-xl p-6 border border-gray-700">
-            <div className="flex justify-between text-white mb-3">
+          <div className="mb-8 bg-[#143344] backdrop-blur rounded-xl p-6 border border-[#5A2E0D]">
+            <div className="flex justify-between text-[#F5E6D3] mb-3">
               <span className="font-medium">{uploadProgress}</span>
-              <span className="text-blue-400 font-bold">{uploadPercentage}%</span>
+              <span className="text-[#C4864A] font-bold">{uploadPercentage}%</span>
             </div>
-            <div className="w-full bg-gray-700 rounded-full h-3 overflow-hidden">
+            <div className="w-full bg-[#091a26] rounded-full h-3 overflow-hidden">
               <div
-                className="bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full transition-all duration-300 ease-out"
+                className="bg-gradient-to-r from-[#C4864A] to-[#8B4513] h-3 rounded-full transition-all duration-300 ease-out"
                 style={{ width: `${uploadPercentage}%` }}
               />
             </div>
@@ -472,7 +472,7 @@ function Dashboard() {
 
         {/* Form */}
         {showForm ? (
-          <div className="bg-gray-800/90 backdrop-blur rounded-2xl shadow-xl p-6 sm:p-8 border border-gray-700">
+          <div className="bg-[#143344] backdrop-blur rounded-2xl shadow-xl p-6 sm:p-8 border border-[#5A2E0D]">
             <h2 className="text-2xl font-bold text-white mb-6">
               {isEditing ? "Edit Project" : "Create New Project"}
             </h2>

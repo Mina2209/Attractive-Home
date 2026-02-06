@@ -59,8 +59,8 @@ const ConfirmModal = ({ isOpen, onClose, onConfirm, title, message, confirmText 
                     <button
                         onClick={handleConfirm}
                         className={`flex-1 px-4 py-3 rounded-lg transition-colors font-medium ${isDanger
-                                ? 'bg-red-600 text-white hover:bg-red-700'
-                                : 'bg-blue-600 text-white hover:bg-blue-700'
+                            ? 'bg-red-600 text-white hover:bg-red-700'
+                            : 'bg-blue-600 text-white hover:bg-blue-700'
                             }`}
                     >
                         {confirmText}
