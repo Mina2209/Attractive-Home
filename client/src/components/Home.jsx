@@ -16,14 +16,14 @@ const Home = () => {
 
       <div className="relative z-1 text-center text-[#F5E6D3]">
         <h1
-          className="text-5xl font-bold mb-4"
-          style={{ letterSpacing: "0.72px" }}
+          className="text-[2.75rem] sm:text-5xl font-bold mb-1 sm:mb-3"
+          style={{ letterSpacing: "0.72 px" }}
         >
           Attractive Home
         </h1>
         {/* <p className="text-lg">DESIGN | ART | ARCHITECTURE</p> */}
         <p
-          className="text-lg"
+          className="text-base sm:text-lg"
           style={{ transform: "scale(1.2)", letterSpacing: "0.4px" }}
         >
           Interior Design and Fit-Out
