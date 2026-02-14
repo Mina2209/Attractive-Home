@@ -37,7 +37,7 @@ const Contacts = () => {
 
   return (
     <section className="min-h-screen flex flex-col">
-      <div className="h-40 bg-[#0d2637]"></div>
+      <div className="min-h-[7.5rem] flex items-center px-4 sm:px-6 lg:px-10 py-5 bg-[#091a26]" />
 
       <div className="bg-[#0d2637] text-[#F5E6D3] flex-grow flex items-center justify-center">
         <div className="max-w-4xl w-full bg-[#0d2637] rounded-lg flex flex-col md:flex-row overflow-hidden shadow-lg">
