@@ -9,17 +9,12 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { Link, useLocation } from "react-router-dom";
-import VideoPlayer from "./VideoPlayer";
 
 const Footer = () => {
   const location = useLocation();
   const isActive = (path) => {
     return location.pathname === path ? "text-[#E6C9A8]" : "text-[#F5E6D3]";
   };
-
-  const isContactPage = location.pathname === "/contacts";
-
-  const videoUrl = "/Main/Contacts/master.m3u8";
 
   // 1. Define your icon data array.
   // Each object contains the URL (href) and the FontAwesome icon.
@@ -125,13 +120,6 @@ const Footer = () => {
 
   return (
     <footer className="relative text-[#F5E6D3] py-32 overflow-hidden bg-[#0d2637]">
-      {isContactPage && (
-        <VideoPlayer
-          videoUrl={videoUrl}
-          className="absolute top-0 left-0 w-full h-full object-cover"
-          showMuteButton={false}
-        ></VideoPlayer>
-      )}
       <div className="container mx-auto px-12 relative z-[0]">
         <div className="grid grid-cols-1 space-y-6 gap-8 2xl:gap-32 sm:grid-cols-3 sm:space-y-0">
           {/* Left Section */}
