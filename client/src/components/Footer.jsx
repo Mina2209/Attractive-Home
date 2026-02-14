@@ -119,7 +119,7 @@ const Footer = () => {
   }
 
   return (
-    <footer className="relative text-[#F5E6D3] py-32 overflow-hidden bg-[#0d2637]">
+    <footer className="relative text-[#F5E6D3] py-32 overflow-hidden bg-[#091a26]">
       <div className="container mx-auto px-12 relative z-[0]">
         <div className="grid grid-cols-1 space-y-6 gap-8 2xl:gap-32 sm:grid-cols-3 sm:space-y-0">
           {/* Left Section */}
