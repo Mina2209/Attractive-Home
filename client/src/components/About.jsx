@@ -4,7 +4,7 @@ const About = () => {
   const videoUrl = "/Main/About/master.m3u8";
 
   return (
-    <section className="text-[#F5E6D3] relative">
+    <section className="text-[#F5E6D3] relative bg-[#0d2637] min-h-screen">
       <VideoPlayer
         videoUrl={videoUrl}
         className="absolute inset-0 w-full h-full object-cover"

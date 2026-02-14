@@ -4,7 +4,7 @@ const Home = () => {
   const videoUrl = "/Main/Home/master.m3u8";
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden bg-[#0d2637]">
       <VideoPlayer
         videoUrl={videoUrl}
         className="absolute inset-0 w-full h-full object-cover"
