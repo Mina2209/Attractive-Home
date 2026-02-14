@@ -16,7 +16,7 @@ const Navbar = () => {
       style={{ backdropFilter: "blur(6px)" }}
     >
       <Link to="/" className="flex items-center">
-        <img src="/Logo.webp" alt="Logo" className="h-24 w-auto" />
+        <img src="/Logo.webp" alt="Logo" className="h-20 w-auto" />
       </Link>
 
       {/* Desktop Link */}
