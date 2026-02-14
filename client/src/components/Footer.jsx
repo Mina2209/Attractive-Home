@@ -212,7 +212,7 @@ const Footer = () => {
           <div className="text-left">
             <h1 className="font-bold text-3xl mb-10">Attractive Home</h1>
             <p className="text-sm mb-10">
-              © 2009 — 2024 Attractive Home. All Rights Reserved.
+              © 2009 — 2026 Attractive Home. All Rights Reserved.
               <br />
               Developed by{" "}
               <a
