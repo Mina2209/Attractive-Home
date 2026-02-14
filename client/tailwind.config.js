@@ -5,6 +5,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ['"Brown Pro"', 'sans-serif'],
+      },
       colors: {
         // Navy blue from the image (CMYK: C99, M75, Y51, K62)
         navy: {

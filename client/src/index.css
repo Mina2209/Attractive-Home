@@ -1,3 +1,27 @@
+/* Brown Pro – single family with normal and bold */
+@font-face {
+  font-family: "Brown Pro";
+  src: url("https://db.onlinewebfonts.com/t/4d3847a46ccc828409d7f134d765b8c3.woff2") format("woff2"),
+       url("https://db.onlinewebfonts.com/t/4d3847a46ccc828409d7f134d765b8c3.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Brown Pro";
+  src: url("https://db.onlinewebfonts.com/t/22a6f4f2037b8ced0e58090cefd039bb.woff2") format("woff2"),
+       url("https://db.onlinewebfonts.com/t/22a6f4f2037b8ced0e58090cefd039bb.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  body {
+    font-family: "Brown Pro", sans-serif;
+  }
+}
