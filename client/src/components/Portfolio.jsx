@@ -197,6 +197,18 @@ const Portfolio = () => {
           )}
         </div>
 
+        <div className="relative z-1 flex flex-wrap items-center gap-6 mb-8 px-6">
+          <Link
+            to="/portfolio/map"
+            className="inline-flex items-center gap-2 bg-[#1e3a4d] hover:bg-[#2a4a5f] text-[#F5E6D3] font-semibold py-2 px-4 rounded-lg transition-colors border border-gray-600"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            View projects on map
+          </Link>
+        </div>
         <div className="relative z-1 max-w-5xl grid grid-cols-1 md:grid-cols-3 gap-x-36 md:border-b border-gray-300 gap-y-8 mb-32 md:mx-auto">
           {Object.keys(portfolioData).map((category) => (
             <PortfolioCategory

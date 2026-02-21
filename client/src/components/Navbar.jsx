@@ -11,7 +11,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="fixed top-0 w-full flex justify-between items-center px-4 sm:px-6 lg:px-10 py-5 z-20 text-[#F5E6D3]
+      className="fixed top-0 w-full flex justify-between items-center px-4 sm:px-6 lg:px-10 py-5 z-[1000] text-[#F5E6D3]
       transition-all duration-300 bg-transparent border-0 shadow-none"
       style={{ backdropFilter: "blur(6px)", boxShadow: "none" }}
     >

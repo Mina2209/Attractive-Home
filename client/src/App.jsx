@@ -8,6 +8,7 @@ import { ToastProvider } from "./components/Toast";
 import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
+import ProjectsMap from "./components/ProjectsMap";
 import ProjectDetails from "./components/ProjectDetails";
 import Contacts from "./components/Contacts";
 import Services from "./components/Services";
@@ -26,6 +27,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/map" element={<ProjectsMap />} />
           <Route path="/portfolio/:categoryId" element={<Portfolio />} />
           <Route
             path="/portfolio/:categoryId/:projectId"
