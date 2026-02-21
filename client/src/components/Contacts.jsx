@@ -1,4 +1,18 @@
 import { useEffect, useState } from "react";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import L from "leaflet";
+import "leaflet/dist/leaflet.css";
+
+// Fix default marker icons in react-leaflet
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon-2x.png",
+  iconUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-icon.png",
+  shadowUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png",
+});
+
+// Company location: Al Qusais, Al Nahda 1, Dubai (79P6+86)
+const COMPANY_LOCATION = [25.1286, 55.4192];
 
 const Contacts = () => {
   const [countryCode, setCountryCode] = useState("+971");
@@ -109,6 +123,28 @@ const Contacts = () => {
               <p>+971 43 420732</p>
               {/* <p>51 1 B ST 787J+73, Deira, Dubai, United Arab Emirates</p> */}
               <p>79P6+86, Al Qusais, Al Nahda 1, Dubai, United Arab Emirates</p>
+            </div>
+            {/* Mini map - company location */}
+            <div className="rounded-lg overflow-hidden border border-[#1e3a4d] h-52 w-full flex-shrink-0">
+              <MapContainer
+                center={COMPANY_LOCATION}
+                zoom={15}
+                className="h-full w-full"
+                scrollWheelZoom={false}
+                zoomControl={true}
+              >
+                <TileLayer
+                  attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                  url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                />
+                <Marker position={COMPANY_LOCATION}>
+                  <Popup>
+                    <span className="text-gray-900 font-medium">Attractive Home</span>
+                    <br />
+                    <span className="text-sm">Al Qusais, Al Nahda 1, Dubai</span>
+                  </Popup>
+                </Marker>
+              </MapContainer>
             </div>
             {/* <div>
               <p>Egypt</p>
