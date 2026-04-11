@@ -34,6 +34,12 @@ const Navbar = () => {
           PORTFOLIO
         </Link>
         <Link
+          to="/catalog"
+          className={`hover:text-gray-300 ${isActive("/catalog")}`}
+        >
+          CATALOG
+        </Link>
+        <Link
           to="/contacts"
           className={`hover:text-gray-300 ${isActive("/contacts")}`}
         >
@@ -84,6 +90,13 @@ const Navbar = () => {
             onClick={() => setMenuOpen(false)}
           >
             PORTFOLIO
+          </Link>
+          <Link
+            to="/catalog"
+            className={`hover:text-gray-300 ${isActive("/catalog")}`}
+            onClick={() => setMenuOpen(false)}
+          >
+            CATALOG
           </Link>
           <Link
             to="/contacts"

@@ -39,6 +39,7 @@ HLS_RENDITIONS = {
     "480": {"width": 854, "height": 480, "bandwidth": 1500000},
     "240": {"width": 426, "height": 240, "bandwidth": 500000},
 }
+CATALOG_KEY = 'catalog/products.json'
 
 def is_image(filename):
     """Check if file is an image"""
@@ -164,12 +165,98 @@ def upload_directory_to_s3(local_dir, bucket, s3_prefix):
     
     return uploaded_files
 
+def get_catalog_data(bucket):
+    try:
+        response = s3.get_object(Bucket=bucket, Key=CATALOG_KEY)
+        catalog = json.loads(response['Body'].read().decode('utf-8'))
+        if 'products' not in catalog:
+            catalog['products'] = []
+        return catalog
+    except ClientError as e:
+        if e.response['Error']['Code'] == 'NoSuchKey':
+            return {'version': '1.0', 'lastUpdated': datetime.utcnow().isoformat() + 'Z', 'products': []}
+        raise
+
+def save_catalog_data(bucket, catalog):
+    catalog['lastUpdated'] = datetime.utcnow().isoformat() + 'Z'
+    s3.put_object(
+        Bucket=bucket,
+        Key=CATALOG_KEY,
+        Body=json.dumps(catalog, indent=2),
+        ContentType='application/json'
+    )
+
+def update_product_catalog_entry(bucket, product_key, results):
+    if not results:
+        return
+
+    catalog = get_catalog_data(bucket)
+    products = catalog.get('products', [])
+    target_index = next(
+        (
+            index for index, product in enumerate(products)
+            if str(product.get('handle')) == str(product_key) or str(product.get('product_id')) == str(product_key)
+        ),
+        -1,
+    )
+
+    if target_index < 0:
+        print(f"WARNING: Product {product_key} not found in catalog for media update")
+        return
+
+    product = products[target_index]
+    gallery_images = product.get('gallery_images') or []
+    if not isinstance(gallery_images, list):
+        gallery_images = []
+
+    body_images = product.get('body_images') or []
+    if not isinstance(body_images, list):
+        body_images = []
+
+    updated = False
+
+    for res in results:
+        original = res.get('original', '')
+        converted = res.get('converted')
+        if not converted:
+            continue
+
+        final_src = converted[0] if isinstance(converted, list) else converted
+        if res.get('type') == 'video' and isinstance(converted, list):
+            final_src = next((item for item in converted if item.endswith('master.m3u8')), converted[0])
+
+        if '/cover/' in original:
+            product['primary_image'] = final_src
+            product['usage_image_url'] = final_src
+            updated = True
+            continue
+
+        if not any((isinstance(img, dict) and img.get('url') == final_src) for img in gallery_images):
+            gallery_images.append({'url': final_src, 'alt': product.get('title', '')})
+            updated = True
+
+        if final_src not in body_images:
+            body_images.append(final_src)
+            updated = True
+
+    if updated:
+        product['gallery_images'] = gallery_images
+        product['body_images'] = body_images
+        if not product.get('primary_image') and gallery_images:
+            product['primary_image'] = gallery_images[0].get('url', '')
+        product['updated_at'] = datetime.utcnow().isoformat() + 'Z'
+        products[target_index] = product
+        catalog['products'] = products
+        save_catalog_data(bucket, catalog)
+        print(f"SUCCESS: Updated catalog product {product_key} after media processing")
+
 def handler(event, context):
     """
     Lambda handler for S3 upload events
     
-    Expected S3 key format:
+    Expected S3 key formats:
     uploads/{category}/{project-id}/original/{filename}
+    uploads/products/{product-handle-or-id}/{cover|original}/{filename}
     """
     print(f"Event: {json.dumps(event)}")
     
@@ -184,15 +271,38 @@ def handler(event, context):
         s3_key = unquote_plus(record['s3']['object']['key'])
         print(f"Processing: {s3_key}")
         
-        # Parse the key to extract category, project ID, and filename
-        # Expected: uploads/{category}/{project-id}/original/{filename}
+        # Parse supported key formats
         parts = s3_key.split('/')
-        if len(parts) < 5 or parts[0] != 'uploads':
+        if len(parts) < 4 or parts[0] != 'uploads':
             print(f"Skipping invalid key format: {s3_key}")
             continue
-        
-        category = parts[1]
-        project_id = parts[2]
+
+        upload_type = parts[1]
+        is_product_upload = upload_type == 'products'
+
+        if is_product_upload:
+            if len(parts) < 5:
+                print(f"Skipping invalid product upload key format: {s3_key}")
+                continue
+            product_key = parts[2]
+            filename = parts[-1]
+            output_prefix = f"catalog/products/{product_key}/media"
+            is_cover_file = '/cover/' in s3_key
+            if is_cover_file:
+                output_prefix = f"catalog/products/{product_key}/media/cover"
+        else:
+            if len(parts) < 5:
+                print(f"Skipping invalid project upload key format: {s3_key}")
+                continue
+            category = parts[1]
+            project_id = parts[2]
+            filename = parts[-1]
+            is_cover_file = '/cover/' in s3_key
+            if is_cover_file:
+                output_prefix = f"projects/{category}/{project_id}/media/cover"
+            else:
+                output_prefix = f"projects/{category}/{project_id}/media"
+
         filename = parts[-1]
         
         # Create temp directories
@@ -204,14 +314,6 @@ def handler(event, context):
             # Download file from S3
             s3.download_file(bucket, s3_key, input_path)
             print(f"Downloaded: {s3_key}")
-            
-            # Determine output S3 prefix
-            # Check if this is a cover file based on input path
-            is_cover_file = '/cover/' in s3_key
-            if is_cover_file:
-                output_prefix = f"projects/{category}/{project_id}/media/cover"
-            else:
-                output_prefix = f"projects/{category}/{project_id}/media"
             
             if is_image(filename):
                 # Convert to WebP
@@ -269,9 +371,13 @@ def handler(event, context):
                     'converted': s3_output_key
                 })
         
-        # After processing, update metadata.json
-        # Only if we successfully processed something
-        if results:
+        # After processing, update metadata catalog/project metadata.
+        if results and is_product_upload:
+            try:
+                update_product_catalog_entry(bucket, product_key, results)
+            except Exception as e:
+                print(f"ERROR: Failed to update product catalog entry {product_key}: {e}")
+        elif results:
             try:
                 metadata_key = f"projects/{category}/{project_id}/metadata.json"
                 try:

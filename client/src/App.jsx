@@ -15,7 +15,10 @@ import Services from "./components/Services";
 import NotFound from "./components/NotFound";
 import AluminumSkirting from "./components/AluminumSkirting";
 import Dashboard from "./components/Dashboard";
+import ProductAdminPanel from "./components/ProductAdminPanel";
 import ProtectedRoute from "./components/ProtectedRoute";
+import Catalog from "./components/Catalog";
+import CatalogProductDetails from "./components/CatalogProductDetails";
 
 function App() {
   return (
@@ -36,11 +39,21 @@ function App() {
           <Route path="/portfolio/aluminum-skirting" element={<AluminumSkirting />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/catalog" element={<Catalog />} />
+          <Route path="/catalog/:productId" element={<CatalogProductDetails />} />
           <Route
             path="/dashboard"
             element={
               <ProtectedRoute>
                 <Dashboard />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/dashboard/products"
+            element={
+              <ProtectedRoute>
+                <ProductAdminPanel />
               </ProtectedRoute>
             }
           />

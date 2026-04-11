@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
 import VideoPlayer from "./VideoPlayer";
 import ConfirmModal from "./ConfirmModal";
@@ -373,6 +374,12 @@ function Dashboard() {
               PORTFOLIO DASHBOARD
             </h1>
             <p className="text-[#E6C9A8] mt-1">Manage your projects and media</p>
+            <Link
+              to="/dashboard/products"
+              className="inline-flex mt-3 text-sm text-[#D4A574] hover:text-[#F5E6D3]"
+            >
+              Go to Products Dashboard
+            </Link>
           </div>
           <button
             onClick={() => setShowForm(!showForm)}
