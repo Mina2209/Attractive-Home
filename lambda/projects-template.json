@@ -3,15 +3,15 @@
   "lastUpdated": "2026-01-27T00:00:00Z",
   "categories": {
     "architectural": {
-      "title": "Architectural",
+      "title": "Architectural Design",
       "description": "Architectural design projects"
     },
     "interior": {
-      "title": "Interior",
+      "title": "Interior Design",
       "description": "Interior design projects"
     },
     "fit": {
-      "title": "Fit Out",
+      "title": "Fit-Out Interiors",
       "description": "Fit out projects"
     }
   },

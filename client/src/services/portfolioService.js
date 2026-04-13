@@ -152,9 +152,9 @@ export async function fetchPortfolioData() {
 
     // Default category definitions
     const defaultCategories = {
-        'architectural': { title: 'Architectural', description: 'Architectural design projects' },
-        'interior': { title: 'Interior', description: 'Interior design projects' },
-        'fit': { title: 'Fit Out', description: 'Fit out projects' }
+        'architectural': { title: 'Architectural Design', description: 'Architectural design projects' },
+        'interior': { title: 'Interior Design', description: 'Interior design projects' },
+        'fit': { title: 'Fit-Out Interiors', description: 'Fit out projects' }
     };
 
     // Create category entries from manifest OR use defaults

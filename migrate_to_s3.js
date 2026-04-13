@@ -72,15 +72,15 @@ async function migrate() {
         lastUpdated: new Date().toISOString(),
         categories: {
             architectural: {
-                title: 'Architectural',
+                title: 'Architectural Design',
                 description: portfolioData.architectural?.description || 'Architectural design projects'
             },
             interior: {
-                title: 'Interior',
+                title: 'Interior Design',
                 description: portfolioData.interior?.description || 'Interior design projects'
             },
             fit: {
-                title: 'Fit Out',
+                title: 'Fit-Out Interiors',
                 description: portfolioData.fit?.description || 'Fit out projects'
             }
         },
