@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import VideoPlayer from "./VideoPlayer";
 import ProjectsMapSection from "./ProjectsMapSection";
 
@@ -5,9 +6,9 @@ const About = () => {
   const videoUrl = "/Main/About/master.m3u8";
 
   const pillars = [
-    { label: "Elegance", key: "elegance" },
-    { label: "Functionality", key: "functionality" },
-    { label: "Artistry", key: "artistry" },
+    { label: "Architectural", key: "architectural" },
+    { label: "Interior", key: "interior" },
+    { label: "Fit-Out", key: "fit" },
   ];
 
   return (
@@ -41,21 +42,22 @@ const About = () => {
             </div>
 
             <p
-              className="text-lg sm:text-xl md:text-2xl leading-relaxed text-[#F5E6D3]/95 max-w-2xl"
+              className="text-lg sm:text-xl md:text-2xl leading-relaxed text-[#F5E6D3]/95 max-w-3xl"
               style={{ letterSpacing: "0.03em" }}
             >
-              <span className="text-[#EDDBB3] font-semibold italic">Attractive Home</span>{" "}
-              brings creative interior solutions that combine elegance, functionality, and artistry. We transform spaces into personalized expressions of style and comfort.
+              Since 2009, <span className="text-[#EDDBB3] font-semibold">Attractive Home</span>{" "} has been bringing creative architectural, interior, and fit-out solutions that combine elegance, functionality, and artistry. We transform spaces into personalized expressions of style and comfort.
             </p>
 
             <div className="flex flex-wrap gap-x-8 gap-y-2 pt-2 border-t border-[#F5E6D3]/20">
               {pillars.map(({ label, key }) => (
-                <span
+                <Link
                   key={key}
-                  className="text-[#EDDBB3]/90 text-sm sm:text-base font-medium tracking-wide"
+                  to={`/portfolio/${key}`}
+                  className="text-[#EDDBB3]/90 text-sm sm:text-base font-medium tracking-wide transition-colors hover:text-[#EDDBB3] hover:underline underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#EDDBB3]/70 focus-visible:ring-offset-2 focus-visible:ring-offset-[#0d2637] rounded-sm"
+                  aria-label={`View ${label} portfolio projects`}
                 >
                   {label}
-                </span>
+                </Link>
               ))}
             </div>
           </div>
