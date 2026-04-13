@@ -12,7 +12,7 @@ L.Icon.Default.mergeOptions({
   shadowUrl: "https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/images/marker-shadow.png",
 });
 
-const DUBAI_CENTER = [25.1700, 55.2708];
+const DUBAI_CENTER = [25.1700, 55.2400];
 
 /**
  * Reusable map section with project markers. Use in About page or standalone map page.
