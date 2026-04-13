@@ -19,13 +19,14 @@ const DUBAI_CENTER = [25.1700, 55.2708];
  * @param {string} title - Section heading (e.g. "Over 50 Projects Across Dubai")
  * @param {string} subtitle - Optional short description
  * @param {string} className - Optional wrapper class
- * @param {string} mapHeight - CSS height for the map container (default: calc(100vh-16rem))
+ * @param {string} mapHeight - Tailwind height classes for the map wrapper. Use explicit
+ *   `h-*` (not only `min-h-*`) so Leaflet’s `h-full` map fills the box on mobile.
  */
 const ProjectsMapSection = ({
   title,
   subtitle,
   className = "",
-  mapHeight = "min-h-[400px] sm:min-h-[450px] lg:h-[500px]",
+  mapHeight = "h-[400px] sm:h-[450px] lg:h-[500px]",
 }) => {
   const navigate = useNavigate();
 
