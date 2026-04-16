@@ -9,8 +9,6 @@ const sortOptions = [
   { value: "title_desc", label: "Alphabetically, Z-A" },
   { value: "newest", label: "Date, new to old" },
   { value: "oldest", label: "Date, old to new" },
-  { value: "price_asc", label: "Price, low to high" },
-  { value: "price_desc", label: "Price, high to low" },
 ];
 
 const VISIBLE_CATEGORIES = new Set([
@@ -84,8 +82,6 @@ function Catalog() {
       material: searchParams.get("material") || "",
       selling_type: searchParams.get("selling_type") || "",
       availability: searchParams.get("availability") || "",
-      min_price: searchParams.get("min_price") || "",
-      max_price: searchParams.get("max_price") || "",
       sort: searchParams.get("sort") || "title_asc",
     }),
     [searchParams]
@@ -255,26 +251,6 @@ function Catalog() {
         </div>
       </FilterSection>
 
-      {/* Price range */}
-      <FilterSection title="Price" defaultOpen={false}>
-        <div className="grid grid-cols-2 gap-2">
-          <input
-            type="number"
-            value={filters.min_price}
-            onChange={(e) => updateFilter("min_price", e.target.value)}
-            placeholder="Min"
-            className="bg-[#143344] border border-[#27485c] rounded-lg px-3 py-2 text-[#F5E6D3] text-sm"
-          />
-          <input
-            type="number"
-            value={filters.max_price}
-            onChange={(e) => updateFilter("max_price", e.target.value)}
-            placeholder="Max"
-            className="bg-[#143344] border border-[#27485c] rounded-lg px-3 py-2 text-[#F5E6D3] text-sm"
-          />
-        </div>
-      </FilterSection>
-
       <button
         onClick={resetFilters}
         className="w-full mt-3 bg-[#8B4513] hover:bg-[#723A10] text-white rounded-lg py-2 text-sm font-semibold transition-colors"
@@ -361,8 +337,11 @@ function Catalog() {
               <div ref={gridRef} className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-x-5 gap-y-8">
                 {products.map((product, idx) => {
                   const slug = product.handle || String(product.product_id);
-                  const image = resolveCatalogImageUrl(product.gallery_images?.[0]?.url || "");
-                  const fallbackImage = product.gallery_images?.[0]?.original_url || "";
+                  const image1 = resolveCatalogImageUrl(product.gallery_images?.[0]?.url || "");
+                  const image2 = resolveCatalogImageUrl(product.gallery_images?.[1]?.url || "");
+                  const fallback1 = product.gallery_images?.[0]?.original_url || "";
+                  const fallback2 = product.gallery_images?.[1]?.original_url || "";
+                  const hasSecond = !!image2;
                   return (
                     <Link
                       key={slug}
@@ -370,22 +349,40 @@ function Catalog() {
                       className="catalog-card group"
                       style={{ transitionDelay: `${(idx % 8) * 60}ms` }}
                     >
-                      <div className="aspect-square bg-[#f5f0eb] rounded-lg overflow-hidden">
-                        {image ? (
-                          <img
-                            src={image}
-                            alt={product.title}
-                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                            loading="lazy"
-                            onError={(e) => {
-                              if (!e.target.dataset.triedFallback && fallbackImage) {
-                                e.target.dataset.triedFallback = "1";
-                                e.target.src = fallbackImage;
-                              } else {
-                                e.target.style.display = "none";
-                              }
-                            }}
-                          />
+                      <div className="aspect-square bg-[#f5f0eb] rounded-lg overflow-hidden relative">
+                        {image1 ? (
+                          <>
+                            <img
+                              src={image1}
+                              alt={product.title}
+                              className={`w-full h-full object-cover transition-opacity duration-500 ${hasSecond ? "group-hover:opacity-0" : "group-hover:scale-105 transition-transform duration-500"}`}
+                              loading="lazy"
+                              onError={(e) => {
+                                if (!e.target.dataset.triedFallback && fallback1) {
+                                  e.target.dataset.triedFallback = "1";
+                                  e.target.src = fallback1;
+                                } else {
+                                  e.target.style.display = "none";
+                                }
+                              }}
+                            />
+                            {hasSecond && (
+                              <img
+                                src={image2}
+                                alt={`${product.title} - hover`}
+                                className="absolute inset-0 w-full h-full object-cover opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                                loading="lazy"
+                                onError={(e) => {
+                                  if (!e.target.dataset.triedFallback && fallback2) {
+                                    e.target.dataset.triedFallback = "1";
+                                    e.target.src = fallback2;
+                                  } else {
+                                    e.target.style.display = "none";
+                                  }
+                                }}
+                              />
+                            )}
+                          </>
                         ) : (
                           <div className="w-full h-full flex items-center justify-center text-[#999] text-sm">No image</div>
                         )}
